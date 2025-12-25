@@ -53,12 +53,11 @@
 
   "TIMELINE_JOB_1_TITLE": "Java backend developer [Spring, JavaEE]",
   "TIMELINE_JOB_1_DESCRIPTION": "I am responsible for the development of the player.pl platform using the Spring framework. My responsibilities include:",
-  "TIMELINE_JOB_1_STEP_1": "Design and implementation of new functionalities based on microservices architecture",
-  "TIMELINE_JOB_1_STEP_2": "Participation in advanced database optimization and management processes",
-  "TIMELINE_JOB_1_STEP_3": "Analysis and resolution of production errors",
+  "TIMELINE_JOB_1_STEP_1": "Design and implementation of new functionalities based on microservices architecture and Spring framework",
+  "TIMELINE_JOB_1_STEP_2": "Participation in advanced database optimization and management processes using PostgreSQL and PL/SQL language",
+  "TIMELINE_JOB_1_STEP_3": "Analysis of current reports and resolution of production errors",
   "TIMELINE_JOB_1_DATE": "2023 - now",
   "TIMELINE_JOB_1_COMPANY": "Redge Technologies",
-  "TIMELINE_JOB_1_POSITION": "Junior Java Developer",
 
   "TIMELINE_JOB_2_TITLE": "Java backend developer [Spring, IBM]",
   "TIMELINE_JOB_2_DESCRIPTION": "In the role of Java developer, I participated in the development process of the company's cloud application. I was responsible for:",
@@ -66,7 +65,6 @@
   "TIMELINE_JOB_2_STEP_2": "Design and implementation of UML diagrams",
   "TIMELINE_JOB_2_DATE": "2022 - 2023",
   "TIMELINE_JOB_2_COMPANY": "GAZ-SYSTEM",
-  "TIMELINE_JOB_2_POSITION": "Junior Java Developer",
 
   "TIMELINE_JOB_3_TITLE": "Python backend developer [Flask]",
   "TIMELINE_JOB_3_DESCRIPTION": "An internship with a foreign company has greatly influenced my personal development. As a Python developer:",
@@ -75,7 +73,6 @@
   "TIMELINE_JOB_3_STEP_3": "Designed new layouts using Figma",
   "TIMELINE_JOB_3_DATE": "July 2021",
   "TIMELINE_JOB_3_COMPANY": "Euromind",
-  "TIMELINE_JOB_3_POSITION": "Erasmus+ Internship participant",
 
   "TIMELINE_JOB_4_TITLE": "Programming coach [Java, LUA]",
   "TIMELINE_JOB_4_DESCRIPTION": "As an authority for the youngest programmers:",
@@ -84,5 +81,99 @@
   "TIMELINE_JOB_4_STEP_3": "I created and developed a server for the game Minecraft\nbuilt on JAVA language and Bukkit API",
   "TIMELINE_JOB_4_DATE": "2017 - 2020",
   "TIMELINE_JOB_4_COMPANY": "Mindcloud",
-  "TIMELINE_JOB_4_POSITION": "Certified Mindcloud Coach"
+
+  "timeline": {
+    "title": "Work experience",
+    "currentJobTitle": "current",
+    "jobs": [
+      {
+        "title": "Junior Java Software Engineer",
+        "company": "Redge Technologies",
+        "date": "07.2023 - 09.2025",
+        "icon": "java.png",
+        "steps": [
+          "Development of the Player.pl platform based on a microservices architecture and the Spring framework",
+          "Analysis and resolution of production errors",
+          "Performing overnight application deployments",
+          "Design, analysis, and estimation of client requirements",
+          "Integration with external systems and services"
+        ],
+        "technologies": [
+          "Java",
+          "Spring",
+          "JavaEE",
+          "PostgreSQL",
+          "Gitlab",
+          "Jira",
+          "Confluence",
+          "Hibernate",
+          "JPA",
+          "Linux",
+          "ActiveMQ",
+          "Opensearch"
+        ],
+        "promotions": [
+          {
+            "current": true,
+            "date": "10.2025 - now",
+            "title": "Java Software Engineer"
+          }
+        ]
+      },
+      {
+        "title": "Junior Java Developer",
+        "company": "GAZ-SYSTEM",
+        "date": "2022 - 2023",
+        "icon": "java.png",
+        "steps": [
+          "Development of a cloud application using the IBM FILENET API",
+          "Designing and implementing UML diagrams"
+        ],
+        "technologies": [
+          "Java",
+          "Git",
+          "IBM",
+          "FileNet"
+        ]
+      },
+      {
+        "title": "Junior Python Developer",
+        "company": "Euromind",
+        "date": "July 2021",
+        "icon": "python.png",
+        "steps": [
+          "Development of a web application using Flask",
+          "Performing unit tests and logging tasks in the system",
+          "Designing new layouts using Figma"
+        ],
+        "technologies": [
+          "MySQL",
+          "HTML",
+          "CSS",
+          "Git",
+          "JavaScript",
+          "Python",
+          "Flask",
+          "Figma"
+        ]
+      },
+      {
+        "title": "Certified Programming Coach",
+        "company": "Mindcloud",
+        "date": "2017 - 2020",
+        "icon": "java.png",
+        "steps": [
+          "Leading group programming classes in LUA and JAVA",
+          "Active participation in events combining education and entertainment",
+          "Implementation and development of an educational Minecraft server"
+        ],
+        "technologies": [
+          "MySQL",
+          "Java",
+          "LUA",
+          "Bukkit API"
+        ]
+      }
+    ]
+  }
 }

@@ -1,21 +1,36 @@
-<div id="timeline">
-  <div class="timeline-block" *ngFor="let job of jobs">
-    <div class="timeline-img" appScrollAnimation="0.75">
-      <div class="pulse"></div>
-      <div class="pulse pulse-delay"></div>
-      <div class="overlay"></div>
-      <img src="{{'assets/images/' + job.imageUrl }}" alt="{{ job.title | translate }}">
-    </div>
+<div id="timeline_container">
+  <h2 class="heading"><i class="fa-solid fa-suitcase"></i> {{ timeline.title }} </h2>
+  <div id="timeline">
+    <div class="timeline-block" *ngFor="let job of timeline.jobs">
+      <div class="timeline-img" appScrollAnimation="0.90">
+        <div class="pulse"></div>
+        <div class="pulse pulse-delay"></div>
+        <div class="overlay"></div>
+        <img src="{{'assets/images/' + job.icon }}" alt="{{ job.title }}">
+      </div>
 
-    <div class="timeline-content" appScrollAnimation="0.75">
-      <h2>{{ job.title | translate }}</h2>
-      <p>{{ job.description | translate }}</p>
-      <ul>
-        <li *ngFor="let step of job.steps">{{ step | translate }}</li>
-      </ul>
-      <div class="date">
-        <h2> {{ job.date | translate }}</h2>
-        <p><b>{{ job.company | translate }}</b>, <span class="position">{{ job.position | translate }}</span></p>
+      <div class="timeline-content" appScrollAnimation="0.90">
+        <h2 class="company"><b> <i class="fa-solid fa-cube"></i> {{ job.company }}</b></h2>
+          <ul class="promotion-list">
+            <li *ngFor="let promo of job.promotions" class="promotion">
+              <p class="title">{{ promo.title }} <span *ngIf="promo.current" class="badge-current"> {{ timeline.currentJobTitle }} </span></p>
+              <div class="date">
+                <p> <i class="fa-regular fa-calendar-days"></i> {{ promo.date }}</p>
+              </div>
+            </li>
+            <li>
+              <p class="title">{{ job.title }} <span *ngIf="job.current" class="badge-current"> {{ timeline.currentJobTitle }} </span></p>
+              <div class="date">
+                <p> <i class="fa-regular fa-calendar-days"></i> {{ job.date }}</p>
+              </div>
+              <ul class="steps">
+                <li *ngFor="let step of job.steps">{{ step }}</li>
+              </ul>
+              <ul class="technologies">
+                <li *ngFor="let technology of job.technologies">{{ technology }}</li>
+              </ul>
+            </li>
+          </ul>
       </div>
     </div>
   </div>

@@ -1,20 +1,22 @@
-export class Job {
+export interface Timeline {
   title: string;
-  description: string;
+  currentJobTitle: string;
+  jobs: Job[];
+}
+
+export interface Job {
+  title: string;
   steps: string[];
-  imageUrl: string;
+  icon: string;
   date: string;
   company: string;
-  position: string;
+  technologies: string[];
+  promotions?: Promotion[];
+  current?: boolean;
+}
 
-  constructor(title: string, description: string, steps: string[], imageUrl: string, date: string, company: string, position: string) {
-    this.title = title;
-    this.description = description;
-    this.steps = steps;
-    this.imageUrl = imageUrl;
-    this.date = date;
-    this.company = company;
-    this.position = position;
-  }
-
+export interface Promotion {
+  date: string;
+  title: string;
+  current?: boolean;
 }

@@ -51,38 +51,98 @@
   "PROJECT_3_TITLE": "Admin Management Panel",
   "PROJECT_3_DESCRIPTION": "Aplikacja do zarządzania treścią umożliwiająca właścicielom firm efektywne zarządzanie czasem pracy swoich pracowników. Skorzystaj z zaawansowanego kalendarza z bogatymi funkcjami, takimi jak np. kalkulacja potrzebnych zasobów na nadchodzący miesiąc!",
 
-  "TIMELINE_JOB_1_TITLE": "Java backend developer [Spring, JavaEE]",
-  "TIMELINE_JOB_1_DESCRIPTION": "Jestem odpowiedzialny za rozwój serwisu player.pl przy użyciu frameworka Spring. Do moich obowiązków należą:",
-  "TIMELINE_JOB_1_STEP_1": "Projektowanie i implementacja nowych funkcjonalności w oparciu o architekturę mikroserwisową",
-  "TIMELINE_JOB_1_STEP_2": "Udział w zaawansowanych procesach optymalizacji i zarządzania bazami danych",
-  "TIMELINE_JOB_1_STEP_3": "Analiza oraz rozwiązywanie błędów produkcyjnych",
-  "TIMELINE_JOB_1_DATE": "2023 - teraz",
-  "TIMELINE_JOB_1_COMPANY": "Redge Technologies",
-  "TIMELINE_JOB_1_POSITION": "Junior Java Developer",
-
-  "TIMELINE_JOB_2_TITLE": "Java backend developer [Spring, IBM]",
-  "TIMELINE_JOB_2_DESCRIPTION": "W roli developera Java uczestniczyłem w procesie tworzenia firmowej aplikacji chmurowej. Byłem odpowiedzialny za:",
-  "TIMELINE_JOB_2_STEP_1": "Rozwój wewnętrznej aplikacji chmurowej przy wykorzystaniu frameworka Spring oraz IBM FILENET API",
-  "TIMELINE_JOB_2_STEP_2": "Projektowanie i wdrażanie diagramów UML",
-  "TIMELINE_JOB_2_DATE": "2022 - 2023",
-  "TIMELINE_JOB_2_COMPANY": "GAZ-SYSTEM",
-  "TIMELINE_JOB_2_POSITION": "Junior Java Developer",
-  "TIMELINE_JOB_3_TITLE": "Python backend developer [Flask]",
-
-  "TIMELINE_JOB_3_DESCRIPTION": "Staż w zagranicznej firmie znacznie wpłynął na mój rozwój osobisty. Jako Python developer:",
-  "TIMELINE_JOB_3_STEP_1": "Tworzyłem aplikację internetową przy użyciu języka Python oraz frameworka Flask",
-  "TIMELINE_JOB_3_STEP_2": "Przeprowadzałem testy jednostkowe i rejestrowałem zadania w systemie",
-  "TIMELINE_JOB_3_STEP_3": "Projektowałem nowe widoki przy użyciu aplikacji Figma",
-  "TIMELINE_JOB_3_DATE": "Lipiec 2021",
-  "TIMELINE_JOB_3_COMPANY": "Euromind",
-  "TIMELINE_JOB_3_POSITION": "Uczestnik programu Erasmus+",
-
-  "TIMELINE_JOB_4_TITLE": "Trener programowania [Java, LUA]",
-  "TIMELINE_JOB_4_DESCRIPTION": "Będąc autorytetem dla najmłodszych programistów:",
-  "TIMELINE_JOB_4_STEP_1": "Prowadziłem zajęcia grupowe z programowania w LUA oraz JAVA",
-  "TIMELINE_JOB_4_STEP_2": "Brałem aktywny udział w wydarzeniach łączących edukację z rozrywką",
-  "TIMELINE_JOB_4_STEP_3": "Stworzyłem i rozwijałem serwer do gry Minecraft\nzbudowany na języku JAVA i Bukkit API",
-  "TIMELINE_JOB_4_DATE": "2017 - 2020",
-  "TIMELINE_JOB_4_COMPANY": "Mindcloud",
-  "TIMELINE_JOB_4_POSITION": "Certyfikowany Trener Mindcloud"
+  "timeline": {
+    "title": "Doświadczenie zawodowe",
+    "currentJobTitle": "Obecnie",
+    "jobs": [
+      {
+        "title": "Junior Java Software Engineer",
+        "company": "Redge Technologies",
+        "date": "07.2023 - 09.2025",
+        "icon": "java.png",
+        "steps": [
+          "Rozwój platformy Player.pl w oparciu o architekturę mikroserwisową i framework Spring",
+          "Analiza oraz rozwiązywanie błędów produkcyjnych",
+          "Przeprowadzanie nocnych wdrożeń aplikacji",
+          "Projektowanie, analiza i wycena wymagań klienta",
+          "Integracja z zewnętrznymi systemami i usługami"
+        ],
+        "technologies": [
+          "Java",
+          "Spring",
+          "JavaEE",
+          "PostgreSQL",
+          "Gitlab",
+          "Jira",
+          "Confluence",
+          "Hibernate",
+          "JPA",
+          "Linux",
+          "ActiveMQ",
+          "Opensearch"
+        ],
+        "promotions": [
+          {
+            "current": true,
+            "date": "10.2025 - teraz",
+            "title": "Java Software Engineer"
+          }
+        ]
+      },
+      {
+        "title": "Junior Java Developer",
+        "company": "GAZ-SYSTEM",
+        "date": "2022 - 2023",
+        "icon": "java.png",
+        "steps": [
+          "Rozwój aplikacji chmurowej przy wykorzystaniu IBM FILENET API",
+          "Projektowanie i wdrażanie diagramów UML"
+        ],
+        "technologies": [
+          "Java",
+          "Git",
+          "IBM",
+          "FileNet"
+        ]
+      },
+      {
+        "title": "Junior Python Developer",
+        "company": "Euromind",
+        "date": "Lipiec 2021",
+        "icon": "python.png",
+        "steps": [
+          "Rozwój aplikacji internetowej przy użyciu Flask",
+          "Przeprowadzanie testów jednostkowych i rejestracja zadań w systemie",
+          "Projektowanie nowych widoków przy użyciu aplikacji Figma"
+        ],
+        "technologies": [
+          "MySQL",
+          "HTML",
+          "CSS",
+          "Git",
+          "JavaScript",
+          "Python",
+          "Flask",
+          "Figma"
+        ]
+      },
+      {
+        "title": "Trener programowania",
+        "company": "Mindcloud",
+        "date": "2017 - 2020",
+        "icon": "java.png",
+        "steps": [
+          "Prowadzenie zajęć grupowych z programowania w językach LUA oraz JAVA",
+          "Aktywny udział w wydarzeniach łączących edukację z rozrywką",
+          "Implementacja i rozwój edukacyjnego serwera do gry Minecraft"
+        ],
+        "technologies": [
+          "MySQL",
+          "Java",
+          "LUA",
+          "Bukkit API"
+        ]
+      }
+    ]
+  }
 }
