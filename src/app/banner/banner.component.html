@@ -1,20 +1,17 @@
 <div id="banner">
   <div class="inner">
     <div id="about">
-      <div class="line">
-        <span class="pretitle">{{ 'BANNER_WELCOME_MESSAGE' | translate }}</span>
-        <div class="straight_line"></div>
-      </div>
-
-      <h1>{{ 'BANNER_FULL_NAME' | translate }}</h1>
-      <p class="subtitle">{{ 'BANNER_PROFESSION' | translate }}</p>
+      <h1>{{ model?.fullName }}</h1>
+      <div class="straight_line"></div>
+      <p class="profession">{{ model?.profession }}</p>
+      <p class="description">{{ model?.description }}</p>
 
       <div id="linkers">
-        <a href="https://www.linkedin.com/in/b-malec/" target="_blank" class="social_link"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/b-malec/" target="_blank" class="social_link"><i class="fa-brands fa-linkedin-in"></i> linkedin </a>
         <div class="dot"></div>
-        <a href="https://github.com/Vertonowsky" target="_blank" class="social_link"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/Vertonowsky" target="_blank" class="social_link"><i class="fa-brands fa-github"></i> github </a>
         <div class="dot"></div>
-        <a href="mailto:bartosz.malec@onet.pl" target="_blank" class="social_link"><i class="fa-solid fa-envelope"></i></a>
+        <a href="mailto:bartosz.malec@onet.pl" target="_blank" class="social_link"><i class="fa-regular fa-envelope"></i> email </a>
       </div>
 
     </div>

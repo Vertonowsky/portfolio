@@ -11,6 +11,7 @@
   background: transparent;
   padding: 12px 45px 12px 0;
   gap: 30px;
+  user-select: none;
   transition: all 0.3s;
   z-index: 100;
 }
@@ -23,15 +24,14 @@
 
 
 #header.active {
-  background: #1C1D21;
+  background: #080810;
 }
 
 .header_buttons a {
   position: relative;
   font-size: 15px;
   font-weight: bold;
-  color: #D0D0D0;
-  text-transform: uppercase;
+  color: #E9EDF3;
   cursor: pointer;
   transition: all 0.3s;
   z-index: 2;
@@ -45,13 +45,17 @@
   font-size: 15px;
   font-weight: bold;
   width: 60px;
-  color: #D0D0D0;
+  color: #E9EDF3;
   background: transparent;
-  border: 1px solid #D0D0D0;
+  border: 1px solid #E9EDF3;
   border-radius: 5px;
   padding: 6px;
   cursor: pointer;
-  transition: border-color 0.3s;
+  transition: background 0.3s;
+}
+
+.custom-select:hover {
+  background: rgba(97 98 109 / 0.7)
 }
 
 .custom-select .arrow {
@@ -60,7 +64,7 @@
   margin-left: 10px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #D0D0D0;
+  border-top: 5px solid #E9EDF3;
   transition: transform 0.3s;
 }
 
@@ -91,7 +95,7 @@
   left: 0;
   text-transform: uppercase;
   width: 100%;
-  background: #D0D0D0;
+  background: #E9EDF3;
   color: #000;
   border-radius: 0 0 5px 5px;
   transition: opacity 0.3s, visibility 0.3s;
@@ -109,11 +113,11 @@
 }
 
 .custom-options .custom-option:hover {
-  background-color: #f2f2f2;
+  background-color: #d6d8df;
 }
 
 .custom-options .custom-option.selected {
-  background-color: #e2e2e2;
+  background-color: #d6d8df;
 }
 
 

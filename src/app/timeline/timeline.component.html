@@ -1,7 +1,7 @@
-<div id="timeline_container">
-  <h2 class="heading"><i class="fa-solid fa-suitcase"></i> {{ timeline.title }} </h2>
+<div id="timeline_container" *ngIf="model">
+  <h2 class="heading"><i class="fa-solid fa-suitcase"></i> {{ model.title }} </h2>
   <div id="timeline">
-    <div class="timeline-block" *ngFor="let job of timeline.jobs">
+    <div class="timeline-block" *ngFor="let job of model.jobs">
       <div class="timeline-img" appScrollAnimation="0.90">
         <div class="pulse"></div>
         <div class="pulse pulse-delay"></div>
@@ -13,13 +13,13 @@
         <h2 class="company"><b> <i class="fa-solid fa-cube"></i> {{ job.company }}</b></h2>
           <ul class="promotion-list">
             <li *ngFor="let promo of job.promotions" class="promotion">
-              <p class="title">{{ promo.title }} <span *ngIf="promo.current" class="badge-current"> {{ timeline.currentJobTitle }} </span></p>
+              <p class="title">{{ promo.title }} <span *ngIf="promo.current" class="badge-current"> {{ model.currentJobTitle }} </span></p>
               <div class="date">
                 <p> <i class="fa-regular fa-calendar-days"></i> {{ promo.date }}</p>
               </div>
             </li>
             <li>
-              <p class="title">{{ job.title }} <span *ngIf="job.current" class="badge-current"> {{ timeline.currentJobTitle }} </span></p>
+              <p class="title">{{ job.title }} <span *ngIf="job.current" class="badge-current"> {{ model.currentJobTitle }} </span></p>
               <div class="date">
                 <p> <i class="fa-regular fa-calendar-days"></i> {{ job.date }}</p>
               </div>

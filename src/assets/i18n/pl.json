@@ -16,9 +16,11 @@
   "ABOUT_ME_HOBBY_CYCLING": "Kolarstwo",
   "ABOUT_ME_TECHNOLOGIES_TITLE": "Technologie, których używam",
 
-  "BANNER_WELCOME_MESSAGE": "JESTEM",
-  "BANNER_FULL_NAME": "Bartek",
-  "BANNER_PROFESSION": "programista backend",
+  "banner": {
+    "fullName": "Bartosz Malec",
+    "profession": "Inżynier programowania Java",
+    "description": "Jestem odpowiedzialny za rozwój i utrzymanie jednej z największych platform streamingowych w Polsce - player.pl."
+  },
 
   "CONTACT_TITLE": "Stwórzmy coś niesamowitego",
   "CONTACT_DESCRIPTION": "Jestem otwarty i gotowy na stawienie czoła nowym wyzwaniom, za którymi idą wartościowe relacje zawodowe. Jeśli uważasz, że pasuję do Twojego zespołu, to daj znać!",
@@ -31,11 +33,13 @@
 
   "FOOTER_COPYRIGHT": "Copyright © 2024. Zaprojektowane przez Bartosza Malec",
 
-  "HEADER_SECTION_START": "Start",
-  "HEADER_SECTION_ABOUT_ME": "O mnie",
-  "HEADER_SECTION_PROJECTS": "Projekty",
-  "HEADER_SECTION_EXPERIENCE": "Doświadczenie",
-  "HEADER_SECTION_CONTACT": "Kontakt",
+  "header": {
+    "start": "Start",
+    "aboutMe": "O mnie",
+    "projects": "Projekty",
+    "experience": "Doświadczenie",
+    "contact": "Kontakt"
+  },
 
   "PROJECTS_SECTION_TITLE": "Moje projekty",
   "PROJECTS_TECHNOLOGIES_USED": "Użyte technologie:",

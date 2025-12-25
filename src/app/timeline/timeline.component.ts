@@ -18,13 +18,13 @@ import {Timeline} from "./timeline.model";
 })
 export class TimelineComponent {
 
-  timeline!: Timeline;
+  model?: Timeline;
 
   constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
-    this.translate.get('timeline').subscribe((data: Timeline) => {
-      this.timeline = data;
+    this.translate.stream('timeline').subscribe((data: Timeline) => {
+      this.model = data;
     });
   }
 

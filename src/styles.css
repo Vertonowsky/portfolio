@@ -67,21 +67,28 @@ body::-webkit-scrollbar-corner {
 
 .social_link {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  width: 38px;
-  height: 38px;
-  background: transparent;
-  border-radius: 50%;
-  color: var(--color-default);
-  transition: color 0.3s, background 0.4s;
+  font-size: 15px;
+  background: #0C1219;
+  border: 2px solid #1c2f43;
+  border-radius: 10px;
+  color: #F4F9FF;
+  padding: 8px 12px;
+  transform: none;
+  top: 0;
+  transition: color 0.3s, background 0.4s, top 0.3s;
+}
+
+.social_link i {
+  margin-right: 10px;
+  font-size: 20px;
 }
 
 .social_link:hover {
-  color: #DBDBDB;
-  background: #494B57;
+  top: -3px;
+  background: #24232e;
 }
 
 
@@ -94,11 +101,6 @@ body::-webkit-scrollbar-corner {
   0% { transform: translateX(30%); opacity: 0; }
   70% { transform: translateX(-15%)}
   100% { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes slideFromRightSlightly {
-  from { transform: translateX(50%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
 }
 
 @keyframes slideFromLeftSlightly {

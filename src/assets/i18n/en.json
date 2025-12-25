@@ -16,9 +16,11 @@
   "ABOUT_ME_HOBBY_CYCLING": "Cycling",
   "ABOUT_ME_TECHNOLOGIES_TITLE": "Technologies i use",
 
-  "BANNER_WELCOME_MESSAGE": "Hi, I AM",
-  "BANNER_FULL_NAME": "Bartek",
-  "BANNER_PROFESSION": "a backend developer",
+  "banner": {
+    "fullName": "Bartosz Malec",
+    "profession": "Java Software Engineer",
+    "description": "I am responsible for the development and maintenance of one of Poland’s largest streaming platforms — player.pl."
+  },
 
   "CONTACT_TITLE": "Let's create incredible things together",
   "CONTACT_DESCRIPTION": "I am open-minded and ready to face new challenges followed by valuable working relationships. If you think I would fit into your team, let me know!",
@@ -31,11 +33,13 @@
 
   "FOOTER_COPYRIGHT": "Copyright © 2024. Designed by Bartosz Malec",
 
-  "HEADER_SECTION_START": "Start",
-  "HEADER_SECTION_ABOUT_ME": "About me",
-  "HEADER_SECTION_PROJECTS": "Projects",
-  "HEADER_SECTION_EXPERIENCE": "Experience",
-  "HEADER_SECTION_CONTACT": "Contact",
+  "header": {
+    "start": "Start",
+    "aboutMe": "About me",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
 
   "PROJECTS_SECTION_TITLE": "My projects",
   "PROJECTS_TECHNOLOGIES_USED": "Technologies used:",
@@ -50,37 +54,6 @@
 
   "PROJECT_3_TITLE": "Admin Management Panel",
   "PROJECT_3_DESCRIPTION": "Content Management application allowing company owners to effectively manage work time of their employees. Make use of an advanced calendar with powerful features, such as calculating the resources needed for the upcoming month!",
-
-  "TIMELINE_JOB_1_TITLE": "Java backend developer [Spring, JavaEE]",
-  "TIMELINE_JOB_1_DESCRIPTION": "I am responsible for the development of the player.pl platform using the Spring framework. My responsibilities include:",
-  "TIMELINE_JOB_1_STEP_1": "Design and implementation of new functionalities based on microservices architecture and Spring framework",
-  "TIMELINE_JOB_1_STEP_2": "Participation in advanced database optimization and management processes using PostgreSQL and PL/SQL language",
-  "TIMELINE_JOB_1_STEP_3": "Analysis of current reports and resolution of production errors",
-  "TIMELINE_JOB_1_DATE": "2023 - now",
-  "TIMELINE_JOB_1_COMPANY": "Redge Technologies",
-
-  "TIMELINE_JOB_2_TITLE": "Java backend developer [Spring, IBM]",
-  "TIMELINE_JOB_2_DESCRIPTION": "In the role of Java developer, I participated in the development process of the company's cloud application. I was responsible for:",
-  "TIMELINE_JOB_2_STEP_1": "Developing an internal cloud application using Spring framework and IBM FILENET API",
-  "TIMELINE_JOB_2_STEP_2": "Design and implementation of UML diagrams",
-  "TIMELINE_JOB_2_DATE": "2022 - 2023",
-  "TIMELINE_JOB_2_COMPANY": "GAZ-SYSTEM",
-
-  "TIMELINE_JOB_3_TITLE": "Python backend developer [Flask]",
-  "TIMELINE_JOB_3_DESCRIPTION": "An internship with a foreign company has greatly influenced my personal development. As a Python developer:",
-  "TIMELINE_JOB_3_STEP_1": "Developed web application using Flask framework",
-  "TIMELINE_JOB_3_STEP_2": "Performed unit tests and logged issues into the system",
-  "TIMELINE_JOB_3_STEP_3": "Designed new layouts using Figma",
-  "TIMELINE_JOB_3_DATE": "July 2021",
-  "TIMELINE_JOB_3_COMPANY": "Euromind",
-
-  "TIMELINE_JOB_4_TITLE": "Programming coach [Java, LUA]",
-  "TIMELINE_JOB_4_DESCRIPTION": "As an authority for the youngest programmers:",
-  "TIMELINE_JOB_4_STEP_1": "I was leading programming classes in JAVA and LUA",
-  "TIMELINE_JOB_4_STEP_2": "I actively participated in events combining education and entertainment",
-  "TIMELINE_JOB_4_STEP_3": "I created and developed a server for the game Minecraft\nbuilt on JAVA language and Bukkit API",
-  "TIMELINE_JOB_4_DATE": "2017 - 2020",
-  "TIMELINE_JOB_4_COMPANY": "Mindcloud",
 
   "timeline": {
     "title": "Work experience",

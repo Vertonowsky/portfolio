@@ -1,7 +1,8 @@
 import {Component, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
 import {Language} from "../language/language.enum";
 import {NgClass, NgForOf, NgIf} from "@angular/common";
-import {TranslateModule} from "@ngx-translate/core";
+import {TranslateModule, TranslateService} from "@ngx-translate/core";
+import {Header} from "./header.model";
 
 @Component({
   selector: 'app-header',
@@ -23,9 +24,16 @@ export class HeaderComponent implements OnInit {
 
   languages : string[] = Object.values(Language);
   showOptions : boolean = false;
+  model?: Header;
+
+  constructor(private translate: TranslateService) {}
 
   ngOnInit() {
     this.toggleHeaderClass();
+
+    this.translate.stream('header').subscribe((data: Header) => {
+      this.model = data;
+    });
   }
 
   @HostListener('window:scroll', [])

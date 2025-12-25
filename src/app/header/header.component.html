@@ -13,12 +13,12 @@
     </div>
   </div>
 
-  <div class="header_buttons">
-    <a href="#banner">{{ 'HEADER_SECTION_START' | translate }}</a>
-    <a href="#about_me">{{ 'HEADER_SECTION_ABOUT_ME' | translate }}</a>
-    <a href="#projects_container">{{ 'HEADER_SECTION_PROJECTS' | translate }}</a>
-    <a href="#timeline_container">{{ 'HEADER_SECTION_EXPERIENCE' | translate }}</a>
-    <a href="#contact">{{ 'HEADER_SECTION_CONTACT' | translate }}</a>
+  <div class="header_buttons" *ngIf="model">
+    <a href="#banner">{{ model.start }}</a>
+    <a href="#about_me">{{ model.aboutMe }}</a>
+    <a href="#projects_container">{{ model.projects }}</a>
+    <a href="#timeline_container">{{ model.experience }}</a>
+    <a href="#contact">{{ model.contact }}</a>
   </div>
 
   <a id="navPanelToggle" (click)="toggleMenu()" ><i class="fa fa-bars"></i></a>
@@ -26,12 +26,12 @@
 
 <div id="shadow" [ngClass]="{'active': isHeaderOpened}"></div>
 
-<div id="min-header" [ngClass]="{'active': isHeaderOpened}">
+<div id="min-header" *ngIf="model" [ngClass]="{'active': isHeaderOpened}">
   <div class="header_buttons">
-    <a href="#banner" (click)="toggleMenu()">{{ 'HEADER_SECTION_START' | translate }}</a>
-    <a href="#about_me" (click)="toggleMenu()">{{ 'HEADER_SECTION_ABOUT_ME' | translate }}</a>
-    <a href="#projects_container" (click)="toggleMenu()">{{ 'HEADER_SECTION_PROJECTS' | translate }}</a>
-    <a href="#timeline_container" (click)="toggleMenu()">{{ 'HEADER_SECTION_EXPERIENCE' | translate }}</a>
-    <a href="#contact" (click)="toggleMenu()">{{ 'HEADER_SECTION_CONTACT' | translate }}</a>
+    <a href="#banner" (click)="toggleMenu()">{{ model.start }}</a>
+    <a href="#about_me" (click)="toggleMenu()">{{ model.aboutMe }}</a>
+    <a href="#projects_container" (click)="toggleMenu()">{{ model.projects }}</a>
+    <a href="#timeline_container" (click)="toggleMenu()">{{ model.experience }}</a>
+    <a href="#contact" (click)="toggleMenu()">{{ model.contact }}</a>
   </div>
 </div>
