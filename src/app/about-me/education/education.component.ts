@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {NgClass} from "@angular/common";
-import {University} from "../about-me.model";
 import {TranslateModule} from "@ngx-translate/core";
+import {University} from "./education.model";
 
 @Component({
   selector: 'app-education',

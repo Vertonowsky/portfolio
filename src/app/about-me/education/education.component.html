@@ -1,5 +1,9 @@
-<img [ngClass]="{'custom-background': university.customBackground}" src="{{'assets/images/logo/' + university.imageUrl }}" alt="{{ university.title | translate }}">
+<img [ngClass]="{'custom-background': university.customBackground}" src="{{'assets/images/logo/' + university.icon }}" alt="{{ university.title }}">
+
 <div class="info">
-  <h3>{{ university.title | translate }}</h3>
-  <p>{{ university.description | translate }}</p>
+  <h3>{{ university.title }}</h3>
+</div>
+<p>{{ university.description }}</p>
+<div class="date">
+  <p> <i class="fa-regular fa-calendar-days"></i> {{ university.date }}</p>
 </div>

@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  box-shadow: 0 20px 30px -10px #091D26;
+  box-shadow: 0 20px 30px -10px #050e1a;
   user-select: none;
   background: linear-gradient(
     135deg,
@@ -77,7 +77,7 @@
   color: transparent;
   font-size: 26px;
   font-weight: bold;
-  animation: 1s slideFromBottom ease-in-out;
+  animation: 1s slideFromRightSlightly ease-in-out;
 }
 
 #about .description {
@@ -87,6 +87,7 @@
   line-height: 25px;
   color: #999EA4;
   font-size: 18px;
+  animation: 1s slideFromLeftSlightly ease-in-out;
 }
 
 

@@ -10,7 +10,7 @@
   #timeline_container .heading {
     display: inline-flex;
     align-items: center;
-    color: #F4F9FF;
+    color: #f0f0f0;
     font-size: 30px;
   }
 
@@ -161,7 +161,7 @@
   font-size: 18px;
   font-weight: bold;
   margin: 0;
-  color: #F4F9FF;
+  color: #f0f0f0;
 }
 
   .badge-current {

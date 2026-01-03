@@ -1,7 +1,6 @@
 #projects_container {
   position: relative;
   width: 100%;
-  background: #1C1D21;
   display: flex;
   align-items: center;
   justify-content: flex-start;

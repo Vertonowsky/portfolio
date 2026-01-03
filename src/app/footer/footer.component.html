@@ -2,8 +2,8 @@
   <div class="inner">
     <div id="footer_heading"></div>
 
-    <div id="footer_bottom">
-      <p class="info">{{ 'FOOTER_COPYRIGHT' | translate }}</p>
+    <div id="footer_bottom" *ngIf="model">
+      <p class="info"> {{ model.title }}</p>
 
       <div id="social">
         <a href="https://www.linkedin.com/in/bartosz-malec-a6a36418b/" target="_blank" class="social_link"><i class="fa-brands fa-linkedin"></i></a>

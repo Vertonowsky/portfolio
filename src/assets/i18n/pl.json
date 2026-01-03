@@ -1,24 +1,127 @@
 {
-  "ABOUT_ME_TITLE": "O mnie",
-  "ABOUT_ME_PROFILE_TITLE": "Cześć, jestem 23 letnim programistą Java",
-  "ABOUT_ME_PROFILE_DESCRIPTION_1": "Od momentu rozpoczęcia pierwszej pracy w wieku 16 lat, moja kariera zaczęła rozwijać się w błyskawicznym tempie. Szybko zdobywałem nowe umiejętności i dostosowywałem się do zmieniających się warunków.",
-  "ABOUT_ME_PROFILE_DESCRIPTION_2": "Moim największym celem jest ciągły rozwój umiejętności programistycznych oraz tworzenie kompleksowych oraz nowoczesnych aplikacji internetowych.",
-  "ABOUT_ME_EDUCATION_TITLE": "Edukacja",
-  "ABOUT_ME_EDUCATION_SGGW_TITLE": "Student 4 roku na kierunku Informatyka",
-  "ABOUT_ME_EDUCATION_SGGW_DESCRIPTION": "Szkoła Główna Gospodarstwa Wiejskiego w Warszawie",
-  "ABOUT_ME_EDUCATION_UAL_TITLE": "Erasmus+ ,,Cyfrowa transformacja przedsiębiorstw\"",
-  "ABOUT_ME_EDUCATION_UAL_DESCRIPTION": "Universidad de Almeria",
-  "ABOUT_ME_HOBBIES_TITLE": "Zainteresowania",
-  "ABOUT_ME_HOBBY_GYM": "Siłownia",
-  "ABOUT_ME_HOBBY_CODING": "Programowanie",
-  "ABOUT_ME_HOBBY_BOARD_GAMES": "Gry planszowe",
-  "ABOUT_ME_HOBBY_COOKING": "Gotowanie",
-  "ABOUT_ME_HOBBY_CYCLING": "Kolarstwo",
-  "ABOUT_ME_TECHNOLOGIES_TITLE": "Technologie, których używam",
+  "ABOUT_ME_TECHNOLOGIES_TITLE": "Stos technologiczny",
+
+  "aboutMe": {
+    "scholarships": [
+      {
+        "title": "Innowacje w przedsiębiorswach",
+        "description": "International School for Social and Business Studies",
+        "country": "Słowenia",
+        "icon": "celje.png",
+        "date": "2024"
+      },
+      {
+        "title": "Cyfrowa transformacja przedsiębiorstw",
+        "description": "Universidad de Almeria",
+        "country": "Hiszpania",
+        "icon": "ual.png",
+        "date": "2024"
+      },
+      {
+        "title": "Rozwój aplikacji internetowych",
+        "description": "Euromind",
+        "country": "Hiszpania",
+        "icon": "euromind.png",
+        "date": "2021"
+      }
+    ],
+
+    "technologies": [
+      {
+        "name": "Java 21",
+        "icon": "java.png"
+      },
+      {
+        "name": "Spring",
+        "icon": "spring.png"
+      },
+      {
+        "name": "Hibernate",
+        "icon": "hibernate.png"
+      },
+      {
+        "name": "JPA",
+        "icon": "spring-data.png"
+      },
+      {
+        "name": "Thymeleaf",
+        "icon": "thymeleaf.png"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "postgresql.png"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql.png"
+      },
+      {
+        "name": "ActiveMQ",
+        "icon": "activemq.png"
+      },
+      {
+        "name": "HTML",
+        "icon": "html.png"
+      },
+      {
+        "name": "CSS",
+        "icon": "css.png"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "javascript.png"
+      },
+      {
+        "name": "Git",
+        "icon": "git.png"
+      },
+      {
+        "name": "GitHub",
+        "icon": "github.png"
+      },
+      {
+        "name": "Jenkins",
+        "icon": "jenkins.png"
+      },
+      {
+        "name": "IntelliJ",
+        "icon": "intellij-idea.png"
+      },
+      {
+        "name": "Postman",
+        "icon": "postman.png"
+      },
+      {
+        "name": "Jira",
+        "icon": "jira.png"
+      },
+      {
+        "name": "Confluence",
+        "icon": "confluence.png"
+      }
+    ],
+
+    "universities": [
+      {
+        "title": "Informatyka Stosowana - Magister",
+        "description": "Politechnika Warszawska",
+        "icon": "pw.png",
+        "date": "2025 - 2026",
+        "customBackground": true
+      },
+      {
+        "title": "Informatyka - Inżynier",
+        "description": "Szkoła Główna Gospodarstwa Wiejskiego w Warszawie",
+        "icon": "sggw.png",
+        "date": "2021 - 2025",
+        "customBackground": true
+      }
+    ]
+  },
 
   "banner": {
     "fullName": "Bartosz Malec",
-    "profession": "Inżynier programowania Java",
+    "profession": "Inżynier Oprogramowania Java",
     "description": "Jestem odpowiedzialny za rozwój i utrzymanie jednej z największych platform streamingowych w Polsce - player.pl."
   },
 
@@ -31,7 +134,9 @@
   "CONTACT_FRAME_DESCRIPTION_2": "współpracę",
   "CONTACT_FRAME_DESCRIPTION_3": ". Zachęcam do kontaktu – jestem przekonany, że znajdziemy wspólną ścieżkę do sukcesu.",
 
-  "FOOTER_COPYRIGHT": "Copyright © 2024. Zaprojektowane przez Bartosza Malec",
+  "footer": {
+    "title": "Copyright © 2025. Zaprojektowane przez Bartosza Malec"
+  },
 
   "header": {
     "start": "Start",
@@ -87,9 +192,9 @@
         ],
         "promotions": [
           {
-            "current": true,
             "date": "10.2025 - teraz",
-            "title": "Java Software Engineer"
+            "title": "Java Software Engineer",
+            "current": true
           }
         ]
       },

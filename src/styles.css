@@ -108,6 +108,11 @@ body::-webkit-scrollbar-corner {
   to { transform: translateX(0%); opacity: 1; }
 }
 
+@keyframes slideFromRightSlightly {
+  from { transform: translateX(50%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
 @keyframes slideFromBottom {
   0% { transform: translateY(100px); opacity: 0; }
   70% { transform: translateY(-30px)}
