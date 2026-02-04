@@ -1,10 +1,10 @@
 {
-  "ABOUT_ME_TECHNOLOGIES_TITLE": "Stos technologiczny",
-
   "aboutMe": {
+    "technologiesTitle": "Stos technologiczny",
+    "title": "Wykształcenie",
     "scholarships": [
       {
-        "title": "Innowacje w przedsiębiorswach",
+        "title": "Innovations in Enterpreneurship",
         "description": "International School for Social and Business Studies",
         "country": "Słowenia",
         "icon": "celje.png",
@@ -18,14 +18,13 @@
         "date": "2024"
       },
       {
-        "title": "Rozwój aplikacji internetowych",
+        "title": "Web Application Development",
         "description": "Euromind",
-        "country": "Hiszpania",
+        "country": "Spain",
         "icon": "euromind.png",
         "date": "2021"
       }
     ],
-
     "technologies": [
       {
         "name": "Java 21",
@@ -77,7 +76,7 @@
       },
       {
         "name": "GitHub",
-        "icon": "github.png"
+        "icon": "github_white.png"
       },
       {
         "name": "Jenkins",
@@ -100,7 +99,6 @@
         "icon": "confluence.png"
       }
     ],
-
     "universities": [
       {
         "title": "Informatyka Stosowana - Magister",
@@ -118,13 +116,11 @@
       }
     ]
   },
-
   "banner": {
     "fullName": "Bartosz Malec",
     "profession": "Inżynier Oprogramowania Java",
     "description": "Jestem odpowiedzialny za rozwój i utrzymanie jednej z największych platform streamingowych w Polsce - player.pl."
   },
-
   "CONTACT_TITLE": "Stwórzmy coś niesamowitego",
   "CONTACT_DESCRIPTION": "Jestem otwarty i gotowy na stawienie czoła nowym wyzwaniom, za którymi idą wartościowe relacje zawodowe. Jeśli uważasz, że pasuję do Twojego zespołu, to daj znać!",
   "CONTACT_EMAIL_ME": "Wyślij e-mail!",
@@ -133,11 +129,9 @@
   "CONTACT_FRAME_DESCRIPTION_1": "Słowa, które w cudowny sposób określają jedną z kluczowych wartości - ",
   "CONTACT_FRAME_DESCRIPTION_2": "współpracę",
   "CONTACT_FRAME_DESCRIPTION_3": ". Zachęcam do kontaktu – jestem przekonany, że znajdziemy wspólną ścieżkę do sukcesu.",
-
   "footer": {
     "title": "Copyright © 2025. Zaprojektowane przez Bartosza Malec"
   },
-
   "header": {
     "start": "Start",
     "aboutMe": "O mnie",
@@ -145,21 +139,85 @@
     "experience": "Doświadczenie",
     "contact": "Kontakt"
   },
-
-  "PROJECTS_SECTION_TITLE": "Moje projekty",
-  "PROJECTS_TECHNOLOGIES_USED": "Użyte technologie:",
-  "PROJECTS_SOURCE_CODE": "Kod źródłowy",
-  "PROJECTS_LIVE_DEMO": "Wersja na żywo",
-
-  "PROJECT_1_TITLE": "Online-Courses",
-  "PROJECT_1_DESCRIPTION": "Platforma oferująca kursy online o różnorodnej tematyce. Projekt skierowany głównie do studentów chcących poszerzyć swoją wiedzę. Zawiera własny odtwarzacz multimedialny oraz panel CMS.",
-
-  "PROJECT_2_TITLE": "Leds-Controller",
-  "PROJECT_2_DESCRIPTION": "Aplikacja do zarządzania listwami LED zaprojektowana dla każdego miłośnika świateł LED. Zamontuj pasek LED na boku biurka i zmieniaj animacje za pomocą strony internetowej działającej na zewnętrznym module WiFi Arduino.",
-
-  "PROJECT_3_TITLE": "Admin Management Panel",
-  "PROJECT_3_DESCRIPTION": "Aplikacja do zarządzania treścią umożliwiająca właścicielom firm efektywne zarządzanie czasem pracy swoich pracowników. Skorzystaj z zaawansowanego kalendarza z bogatymi funkcjami, takimi jak np. kalkulacja potrzebnych zasobów na nadchodzący miesiąc!",
-
+  "projectSection": {
+    "title": "Moje projekty",
+    "technologiesUsed": "Użyte technologie:",
+    "projects": [
+      {
+        "title": "Online-Courses",
+        "description": "Platforma oferująca kursy online o różnorodnej tematyce. Projekt skierowany głównie do studentów chcących poszerzyć swoją wiedzę. Zawiera własny odtwarzacz multimedialny oraz panel CMS.",
+        "technologies": [
+          "Java",
+          "Spring",
+          "Hibernate",
+          "JPA",
+          "Thymeleaf",
+          "Git",
+          "MySQL",
+          "OAuth 2.0",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "sourceCodes": [
+          {
+            "value": "Kod źródłowy",
+            "url": "https://github.com/Vertonowsky/Online-Courses"
+          }
+        ]
+      },
+      {
+        "title": "Leds-Controller",
+        "description": "Aplikacja do zarządzania listwami LED zaprojektowana dla każdego miłośnika świateł LED. Zamontuj pasek LED na boku biurka i zmieniaj animacje za pomocą strony internetowej działającej na zewnętrznym module WiFi Arduino.",
+        "technologies": [
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Git",
+          "C++",
+          "Arduino"
+        ],
+        "sourceCodes": [
+          {
+            "value": "Kod źródłowy",
+            "url": "https://github.com/Vertonowsky/Leds-Controller"
+          }
+        ]
+      },
+      {
+        "title": "Admin Management Panel",
+        "description": "Aplikacja do zarządzania treścią umożliwiająca właścicielom firm efektywne zarządzanie czasem pracy swoich pracowników. Skorzystaj z zaawansowanego kalendarza z bogatymi funkcjami, takimi jak np. kalkulacja potrzebnych zasobów na nadchodzący miesiąc!",
+        "technologies": [
+          "Java",
+          "Spring",
+          "Hibernate",
+          "JPA",
+          "Git",
+          "PostgreSQL",
+          "OAuth 2.0",
+          "HTML",
+          "CSS",
+          "TypeScript",
+          "React"
+        ],
+        "sourceCodes": [
+          {
+            "value": "Frontend",
+            "url": "https://github.com/Vertonowsky/admin-panel-frontend"
+          },
+          {
+            "value": "Backend",
+            "url": "https://github.com/Vertonowsky/admin-panel-backend"
+          }
+        ]
+      }
+    ],
+    "projectImages": [
+      "project-1-720p.png",
+      "project-2-720p.png",
+      "project-3-720p.png"
+    ]
+  },
   "timeline": {
     "title": "Doświadczenie zawodowe",
     "currentJobTitle": "Obecnie",

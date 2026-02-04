@@ -1,7 +1,7 @@
 import {Component, ElementRef, Input, OnDestroy, OnInit} from '@angular/core';
 import {AppModule} from "../app.module";
-import {TranslateModule} from "@ngx-translate/core";
-import {ExternalButton, Project} from "./projects.model";
+import {TranslateModule, TranslateService} from "@ngx-translate/core";
+import {ProjectSection} from "./projects.model";
 import {NgClass, NgForOf} from "@angular/common";
 import {ProjectItemComponent} from "./project-item/project-item.component";
 import {ProjectImageComponent} from "./project-image/project-image.component";
@@ -27,35 +27,23 @@ export class ProjectsComponent implements OnInit, OnDestroy {
 
   @Input() activeIndex : number = 0;
 
-  constructor(private elementRef: ElementRef) {}
+  model?: ProjectSection;
 
-  projects : Project[] = [
-    new Project(
-      "PROJECT_1_TITLE",
-      "PROJECT_1_DESCRIPTION",
-      ["Java", "Spring", "Hibernate", "JPA", "Thymeleaf", "Git", "MySQL", "OAuth 2.0", "HTML", "CSS", "JavaScript"],
-      [new ExternalButton("PROJECTS_SOURCE_CODE", "https://github.com/Vertonowsky/Online-Courses")]
-    ),
-    new Project(
-      "PROJECT_2_TITLE",
-      "PROJECT_2_DESCRIPTION",
-      ["JavaScript", "HTML", "CSS", "Git", "C++", "Arduino"],
-      [new ExternalButton("PROJECTS_SOURCE_CODE", "https://github.com/Vertonowsky/Leds-Controller")],
-    ),
-    new Project(
-      "PROJECT_3_TITLE",
-      "PROJECT_3_DESCRIPTION",
-      ["Java", "Spring", "Hibernate", "JPA", "Git", "PostgreSQL", "OAuth 2.0", "HTML", "CSS", "TypeScript", "React"],
-      [new ExternalButton("Frontend", "https://github.com/Vertonowsky/admin-panel-frontend"),
-        new ExternalButton("Backend", "https://github.com/Vertonowsky/admin-panel-backend")]
-    ),
-  ]
+  constructor(private translate: TranslateService, private elementRef: ElementRef) {}
 
-  projectImages : string[] = [
-    "project-1-720p.png",
-    "project-2-720p.png",
-    "project-3-720p.png",
-  ]
+  ngOnInit() {
+    this.elementRef.nativeElement.addEventListener('touchstart', this.onTouchStart.bind(this), false);
+    this.elementRef.nativeElement.addEventListener('touchend', this.onTouchEnd.bind(this), false);
+
+    this.translate.stream('projectSection').subscribe((data: ProjectSection) => {
+      this.model = data;
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.elementRef.nativeElement.removeEventListener('touchstart', this.onTouchStart.bind(this), false);
+    this.elementRef.nativeElement.removeEventListener('touchend', this.onTouchEnd.bind(this), false);
+  }
 
 
   specificSlide(index: number): void {
@@ -65,15 +53,24 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   }
 
   nextSlide(): void {
-    this.activeIndex = (this.activeIndex + 1) % this.projects.length;
+    if (this.model == undefined)
+      return;
+
+    this.activeIndex = (this.activeIndex + 1) % this.model.projects.length;
   }
 
   previousSlide(): void {
-    this.activeIndex = (this.activeIndex - 1 + this.projects.length) % this.projects.length;
+    if (this.model == undefined)
+      return;
+
+    this.activeIndex = (this.activeIndex - 1 + this.model.projects.length) % this.model.projects.length;
   }
 
   isNext(index: number): boolean {
-    return (this.activeIndex + 1) % this.projects.length === index;
+    if (this.model == undefined)
+      return false;
+
+    return (this.activeIndex + 1) % this.model.projects.length === index;
   }
 
   isFuture(index: number): boolean {
@@ -92,16 +89,6 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       classes.push('future');
 
     return classes;
-  }
-
-  ngOnInit(): void {
-    this.elementRef.nativeElement.addEventListener('touchstart', this.onTouchStart.bind(this), false);
-    this.elementRef.nativeElement.addEventListener('touchend', this.onTouchEnd.bind(this), false);
-  }
-
-  ngOnDestroy(): void {
-    this.elementRef.nativeElement.removeEventListener('touchstart', this.onTouchStart.bind(this), false);
-    this.elementRef.nativeElement.removeEventListener('touchend', this.onTouchEnd.bind(this), false);
   }
 
   private onTouchStart(evt: TouchEvent): void {

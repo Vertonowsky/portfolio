@@ -45,10 +45,8 @@ export class AboutMeComponent {
 
   // glow animation
   triggerNextSwipe() {
-    if (this.model == undefined) {
-      console.log(this.model)
+    if (this.model == undefined)
       return;
-    }
 
     const count = 3;
     const indexes = new Set<number>();

@@ -1,4 +1,4 @@
 export interface Technology {
-  name: String;
-  icon: String;
+  name: string;
+  icon: string;
 }

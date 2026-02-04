@@ -1,7 +1,5 @@
 <div id="projects_container">
-
-  <h2 class="title">{{ 'PROJECTS_SECTION_TITLE' | translate }}</h2>
-
+  <h2 class="heading"><i class="fa-solid fa-graduation-cap"></i> {{ model?.title }} </h2>
   <div class="inner_section" appScrollAnimation="0.9">
 
     <div class="animated_arrows" (click)="nextSlide()">
@@ -10,13 +8,13 @@
     </div>
 
     <div class="details_container">
-      <app-project-item class="project_block" [ngClass]="classList(i)" *ngFor="let project of projects; let i = index"
-                        [project]="project">
+      <app-project-item class="project_block" [ngClass]="classList(i)" *ngFor="let project of model?.projects; let i = index"
+                        [project]="project" [model]="model">
       </app-project-item>
     </div>
 
     <div class="project_images">
-      <app-project-image class="image_block" [ngClass]="classList(i)" *ngFor="let image of projectImages; let i = index"
+      <app-project-image class="image_block" [ngClass]="classList(i)" *ngFor="let image of model?.projectImages; let i = index"
                          [url]="image"
                          [index]="i"
                          (click)="specificSlide(i)">

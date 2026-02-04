@@ -1,18 +1,15 @@
 <div id="about_me">
   <div class="inner">
-    <div class="container" id="technologies">
-      <div class="left" appScrollAnimation="0.85">
-        <div class="education_container">
-          <div class="title_holder" appScrollAnimation="0.9">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <p>Wykształcenie</p>
-          </div>
+    <div class="container">
+      <div class="left">
+        <div class="education_container" appScrollAnimation="0.85">
+          <h2 class="heading"><i class="fa-solid fa-graduation-cap"></i> {{ model?.title }} </h2>
           <app-education class="block" *ngFor="let university of model?.universities"
                          [university]="university">
           </app-education>
         </div>
 
-        <div class="scholarship_container">
+        <div class="scholarship_container" appScrollAnimation="0.85">
           <app-scholarship class="block" *ngFor="let scholarship of model?.scholarships"
                          [scholarship]="scholarship">
           </app-scholarship>
@@ -20,7 +17,7 @@
       </div>
 
       <div class="right" appScrollAnimation="0.85">
-        <h3>{{ 'ABOUT_ME_TECHNOLOGIES_TITLE' | translate }}</h3>
+        <h2 class="heading"> {{ model?.technologiesTitle }} </h2>
         <div class="technology_container">
           <app-technology class="technology" *ngFor="let technology of model?.technologies; let i = index"
                           [technology]="technology"

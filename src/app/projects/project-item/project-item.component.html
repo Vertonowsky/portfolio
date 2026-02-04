@@ -1,15 +1,15 @@
 <div class="project_details">
   <div class="horizontal_line"></div>
-  <p class="project_title">{{ project.title | translate }}</p>
-  <p class="project_description">{{ project.description | translate }}</p>
+  <p class="project_title">{{ project.title  }}</p>
+  <p class="project_description">{{ project.description }}</p>
 
-  <p class="heading">{{ 'PROJECTS_TECHNOLOGIES_USED' | translate }}</p>
+  <p class="title">{{ model?.technologiesUsed }}</p>
   <div class="tech_container">
-    <span class="tech" *ngFor="let technology of project.tech">{{ technology }}</span>
+    <span class="tech" *ngFor="let technology of project.technologies">{{ technology }}</span>
   </div>
 
   <div class="buttons">
-    <a *ngFor="let sourceCode of project.sourceCodes" href="{{ sourceCode.url }}" target="_blank"><i class="fa-brands fa-github"></i> <span>{{ sourceCode.value | translate }}</span></a>
-    <a *ngIf="project.liveDemo" href="{{ project.liveDemo.url }}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> {{ project.liveDemo.value | translate }}</a>
+    <a *ngFor="let sourceCode of project.sourceCodes" href="{{ sourceCode.url }}" target="_blank"><i class="fa-brands fa-github"></i> <span>{{ sourceCode.value }}</span></a>
+<!--    <a *ngIf="project.liveDemo" href="{{ project.liveDemo.url }}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> {{ project.liveDemo.value | translate }}</a>-->
   </div>
 </div>

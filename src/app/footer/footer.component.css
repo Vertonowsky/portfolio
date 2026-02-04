@@ -15,7 +15,7 @@
 }
 
 
-#footer_heading {
+#footer_title {
   position: relative;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@
   font-size: 0;
 }
 
-#footer_heading .title {
+#footer_title .title {
   font-size: var(--font-size-title);
   color: var(--color-default);
   font-weight: bold;
@@ -36,7 +36,7 @@
   margin: 0 0 12px 0;
 }
 
-#footer_heading .desc {
+#footer_title .desc {
   color: #878A99;
   font-size: var(--font-size-normal);
   text-align: center;
@@ -106,21 +106,21 @@
     padding: 50px 0 35px 0;
   }
 
-  #footer_heading {
+  #footer_title {
     width: 95%;
     height: auto;
     padding-bottom: 40px;
   }
 
-  #footer_heading .title {
+  #footer_title .title {
     font-size: var(--font-size-normal);
   }
 
-  #footer_heading .desc {
+  #footer_title .desc {
     font-size: var(--font-size-smaller);
   }
 
-  #footer_heading .href {
+  #footer_title .href {
     font-size: var(--font-size-smaller);
   }
 
@@ -138,22 +138,22 @@
 
 @media screen and (max-width: 480px) {
 
-  #footer_heading {
+  #footer_title {
     width: 95%;
     height: auto;
     padding-bottom: 40px;
   }
 
-  #footer_heading .title {
+  #footer_title .title {
     font-size: var(--font-size-smaller);
     margin-bottom: 10px;
   }
 
-  #footer_heading .desc {
+  #footer_title .desc {
     font-size: var(--font-size-phone);
   }
 
-  #footer_heading .href {
+  #footer_title .href {
     font-size: var(--font-size-phone);
   }
 

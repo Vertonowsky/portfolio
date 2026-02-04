@@ -1,7 +1,30 @@
 {
-  "ABOUT_ME_TECHNOLOGIES_TITLE": "Technologies i use",
-
   "aboutMe": {
+    "technologiesTitle": "Technologies i use",
+    "title": "Education",
+    "scholarships": [
+      {
+        "title": "Innowacje w przedsiębiorswach",
+        "description": "International School for Social and Business Studies",
+        "country": "Slovenia",
+        "icon": "celje.png",
+        "date": "2024"
+      },
+      {
+        "title": "Digital transformation of companies",
+        "description": "Universidad de Almeria",
+        "country": "Spain",
+        "icon": "ual.png",
+        "date": "2024"
+      },
+      {
+        "title": "Rozwój aplikacji internetowych",
+        "description": "Euromind",
+        "country": "Hiszpania",
+        "icon": "euromind.png",
+        "date": "2021"
+      }
+    ],
     "technologies": [
       {
         "name": "Java 21",
@@ -53,7 +76,7 @@
       },
       {
         "name": "GitHub",
-        "icon": "github.png"
+        "icon": "github_white.png"
       },
       {
         "name": "Jenkins",
@@ -76,29 +99,28 @@
         "icon": "confluence.png"
       }
     ],
-
     "universities": [
       {
-        "title": "Computer Science Engineer",
-        "description": "Warsaw University of Life Sciences",
-        "icon": "sggw.png",
-        "current": true
+        "title": "Applied Computer Science - Master",
+        "description": "Warsaw University of Technology",
+        "icon": "pw.png",
+        "date": "2025 - 2026",
+        "customBackground": true
       },
       {
-        "title": "Erasmus+ Digital transformation of companies",
-        "description": "Universidad de Almeria",
-        "icon": "ual.png",
-        "current": false
+        "title": "Computer Science - Engineer",
+        "description": "Warsaw University of Life Sciences",
+        "icon": "sggw.png",
+        "date": "2021 - 2025",
+        "customBackground": true
       }
     ]
   },
-
   "banner": {
     "fullName": "Bartosz Malec",
     "profession": "Java Software Engineer",
     "description": "I am responsible for the development and maintenance of one of Poland’s largest streaming platforms — player.pl."
   },
-
   "CONTACT_TITLE": "Let's create incredible things together",
   "CONTACT_DESCRIPTION": "I am open-minded and ready to face new challenges followed by valuable working relationships. If you think I would fit into your team, let me know!",
   "CONTACT_EMAIL_ME": "E-mail me!",
@@ -107,9 +129,9 @@
   "CONTACT_FRAME_DESCRIPTION_1": "Words that wonderfully define one of the key values - ",
   "CONTACT_FRAME_DESCRIPTION_2": "collaboration",
   "CONTACT_FRAME_DESCRIPTION_3": ". I encourage you to contact me - I believe we will find a common path to success.",
-
-  "FOOTER_COPYRIGHT": "Copyright © 2024. Designed by Bartosz Malec",
-
+  "footer": {
+    "title": "Copyright © 2024. Designed by Bartosz Malec"
+  },
   "header": {
     "start": "Start",
     "aboutMe": "About me",
@@ -117,21 +139,85 @@
     "experience": "Experience",
     "contact": "Contact"
   },
-
-  "PROJECTS_SECTION_TITLE": "My projects",
-  "PROJECTS_TECHNOLOGIES_USED": "Technologies used:",
-  "PROJECTS_SOURCE_CODE": "Source Code",
-  "PROJECTS_LIVE_DEMO": "Live demo",
-
-  "PROJECT_1_TITLE": "Online-Courses",
-  "PROJECT_1_DESCRIPTION": "Website offering online courses with variety of different topics. Project is mainly targeted to students willing to expand their knowledge. There is included a custom media player and a CMS panel.",
-
-  "PROJECT_2_TITLE": "Leds-Controller",
-  "PROJECT_2_DESCRIPTION": "LED strip management application designed for every lover of LED lights. Mount led strip to the side of your desk and change animations using online website running on external arduino WiFi module.",
-
-  "PROJECT_3_TITLE": "Admin Management Panel",
-  "PROJECT_3_DESCRIPTION": "Content Management application allowing company owners to effectively manage work time of their employees. Make use of an advanced calendar with powerful features, such as calculating the resources needed for the upcoming month!",
-
+  "projectSection": {
+    "title": "My projects",
+    "technologiesUsed": "Technologies used:",
+    "projects": [
+      {
+        "title": "Online-Courses",
+        "description": "Website offering online courses with variety of different topics. Project is mainly targeted to students willing to expand their knowledge. There is included a custom media player and a CMS panel.",
+        "technologies": [
+          "Java",
+          "Spring",
+          "Hibernate",
+          "JPA",
+          "Thymeleaf",
+          "Git",
+          "MySQL",
+          "OAuth 2.0",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "sourceCodes": [
+          {
+            "value": "Source code",
+            "url": "https://github.com/Vertonowsky/Online-Courses"
+          }
+        ]
+      },
+      {
+        "title": "Leds-Controller",
+        "description": "LED strip management application designed for every lover of LED lights. Mount led strip to the side of your desk and change animations using online website running on external arduino WiFi module.",
+        "technologies": [
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Git",
+          "C++",
+          "Arduino"
+        ],
+        "sourceCodes": [
+          {
+            "value": "Kod źródłowy",
+            "url": "https://github.com/Vertonowsky/Leds-Controller"
+          }
+        ]
+      },
+      {
+        "title": "Admin Management Panel",
+        "description": "Content Management application allowing company owners to effectively manage work time of their employees. Make use of an advanced calendar with powerful features, such as calculating the resources needed for the upcoming month!",
+        "technologies": [
+          "Java",
+          "Spring",
+          "Hibernate",
+          "JPA",
+          "Git",
+          "PostgreSQL",
+          "OAuth 2.0",
+          "HTML",
+          "CSS",
+          "TypeScript",
+          "React"
+        ],
+        "sourceCodes": [
+          {
+            "value": "Frontend",
+            "url": "https://github.com/Vertonowsky/admin-panel-frontend"
+          },
+          {
+            "value": "Backend",
+            "url": "https://github.com/Vertonowsky/admin-panel-backend"
+          }
+        ]
+      }
+    ],
+    "projectImages": [
+      "project-1-720p.png",
+      "project-2-720p.png",
+      "project-3-720p.png"
+    ]
+  },
   "timeline": {
     "title": "Work experience",
     "currentJobTitle": "current",
