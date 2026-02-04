@@ -1,27 +1,18 @@
-export class Project {
+export interface ProjectSection {
   title: string;
-  description: string;
-  tech: string[];
-  sourceCodes: ExternalButton[];
-  liveDemo?: ExternalButton;
-
-  constructor(title: string, description: string, tech: string[], sourceCodes: ExternalButton[], liveDemo?: ExternalButton) {
-    this.title = title;
-    this.description = description;
-    this.tech = tech;
-    this.sourceCodes = sourceCodes;
-    this.liveDemo = liveDemo
-  }
-
+  technologiesUsed: string;
+  projects: Project[];
+  projectImages: string[];
 }
 
-export class ExternalButton {
+export interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  sourceCodes: ExternalButton[];
+}
+
+export interface ExternalButton {
   value: string;
   url: string;
-
-  constructor(value: string, url: string) {
-    this.value = value;
-    this.url = url;
-  }
-
 }

@@ -2,7 +2,7 @@ img {
   position: absolute;
   right: 20px;
   top: 20px;
-  max-width: 60px;
+  max-width: 50px;
   pointer-events: none;
 }
 
@@ -21,25 +21,31 @@ img {
 
   .info h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 17px;
     text-align: left;
-    background: linear-gradient(90deg,rgba(3, 173, 229, 1) 0%, rgba(92, 163, 255, 1) 100%);
+    background: linear-gradient(90deg,rgba(3, 131, 229, 1) 0%, rgba(92, 114, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
 p {
-  margin: 10px 0;
-  font-size: 15px;
+  margin: 2px 0 0 0;
+  font-size: 14px;
   color: #8e949a;
 }
 
-.date p {
-  margin: 0;
+.erasmus {
+  position: relative;
+  align-self: flex-start;
+  margin: 0 0 8px 0;
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-size: 13px;
+  text-align: center;
+  color: #BAD6F9;
+  background: #143c5f8c;
 }
-
-
 
 @media (max-width: 650px) {
 

@@ -1,11 +1,18 @@
 img {
-  width: 45%;
-  max-height: 50px;
+  position: relative;
+  z-index: 1;
+  max-width: 35%;
+  height: auto;
   pointer-events: none;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 p {
-  margin: 12px 0 0 0;
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  margin-bottom: 4px;
   font-size: 14px;
 }
 

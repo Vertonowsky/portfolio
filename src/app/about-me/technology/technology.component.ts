@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Technology} from "../about-me.model";
+import {Technology} from "./technology.model";
 
 @Component({
   selector: 'app-technology',

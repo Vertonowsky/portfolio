@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
-import {NgClass, NgForOf, NgIf} from "@angular/common";
+import {NgForOf} from "@angular/common";
 import {TranslateModule} from "@ngx-translate/core";
-import {Project} from "../projects.model";
+import {Project, ProjectSection} from "../projects.model";
 
 @Component({
   selector: 'app-project-item',
@@ -9,8 +9,6 @@ import {Project} from "../projects.model";
   imports: [
     NgForOf,
     TranslateModule,
-    NgClass,
-    NgIf
   ],
   templateUrl: './project-item.component.html',
   styleUrl: './project-item.component.css'
@@ -18,5 +16,6 @@ import {Project} from "../projects.model";
 export class ProjectItemComponent {
 
   @Input() project!: Project;
+  @Input() model!: ProjectSection | undefined;
 
 }

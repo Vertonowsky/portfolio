@@ -71,7 +71,7 @@ body::-webkit-scrollbar-corner {
   align-items: center;
   justify-content: center;
   font-size: 15px;
-  background: #0C1219;
+  background: rgba(23 34 48 / 0.2);
   border: 2px solid #1c2f43;
   border-radius: 10px;
   color: #F4F9FF;
@@ -88,9 +88,45 @@ body::-webkit-scrollbar-corner {
 
 .social_link:hover {
   top: -3px;
-  background: #24232e;
+  background: rgba(95 132 179 / 0.17);
 }
 
+.heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #E6E6E6;
+  font-size: 24px;
+}
+
+  .heading i {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #064569;
+    color: #53EAFD;
+    font-size: 20px;
+  }
+
+
+
+@media (max-width: 1280px) {
+
+  .heading {
+    font-size: 22px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .heading {
+    width: 90%;
+    font-size: 19px;
+  }
+
+}
 
 @keyframes slideIn {
   from { opacity: 0; }
@@ -106,6 +142,11 @@ body::-webkit-scrollbar-corner {
 @keyframes slideFromLeftSlightly {
   from { transform: translateX(-50%); opacity: 0; }
   to { transform: translateX(0%); opacity: 1; }
+}
+
+@keyframes slideFromRightSlightly {
+  from { transform: translateX(50%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
 @keyframes slideFromBottom {

@@ -1,41 +1,27 @@
 <div id="about_me">
   <div class="inner">
-    <div class="title_holder" id="title_holder" appScrollAnimation="0.9">
-      <p>{{ 'ABOUT_ME_TITLE' | translate }}</p>
-    </div>
-    <div class="container" id="technologies">
-      <div class="left" appScrollAnimation="0.85">
-        <div class="desc">
-          <div id="self_description">
-            <p class="prefix">{{ 'ABOUT_ME_PROFILE_TITLE' | translate }}</p>
-            <p class="bio">
-              {{ 'ABOUT_ME_PROFILE_DESCRIPTION_1' | translate }}
-              <br><br>
-              {{ 'ABOUT_ME_PROFILE_DESCRIPTION_2' | translate }}
-            </p>
-          </div>
+    <div class="container">
+      <div class="left">
+        <div class="education_container" appScrollAnimation="0.85">
+          <h2 class="heading"><i class="fa-solid fa-graduation-cap"></i> {{ model?.title }} </h2>
+          <app-education class="block" *ngFor="let university of model?.universities"
+                         [university]="university">
+          </app-education>
+        </div>
 
-          <p class="desc_heading">{{ 'ABOUT_ME_EDUCATION_TITLE' | translate }}</p>
-          <div class="education_container">
-            <app-education class="block" *ngFor="let university of universities"
-                           [university]="university">
-            </app-education>
-          </div>
-
-          <p class="desc_heading">{{ 'ABOUT_ME_HOBBIES_TITLE' | translate }}</p>
-          <div class="hobbies">
-            <app-hobby class="hobby" *ngFor="let hobby of hobbies"
-                       [hobby]="hobby">
-            </app-hobby>
-          </div>
+        <div class="scholarship_container" appScrollAnimation="0.85">
+          <app-scholarship class="block" *ngFor="let scholarship of model?.scholarships"
+                         [scholarship]="scholarship">
+          </app-scholarship>
         </div>
       </div>
 
       <div class="right" appScrollAnimation="0.85">
-        <h3>{{ 'ABOUT_ME_TECHNOLOGIES_TITLE' | translate }}</h3>
+        <h2 class="heading"> {{ model?.technologiesTitle }} </h2>
         <div class="technology_container">
-          <app-technology class="technology" *ngFor="let technology of technologies"
-                          [technology]="technology">
+          <app-technology class="technology" *ngFor="let technology of model?.technologies; let i = index"
+                          [technology]="technology"
+                          [class.glow-swipe]="activeSwipeIndexes.includes(i)">
           </app-technology>
         </div>
       </div>

@@ -2,14 +2,14 @@
   <h2 class="heading"><i class="fa-solid fa-suitcase"></i> {{ model.title }} </h2>
   <div id="timeline">
     <div class="timeline-block" *ngFor="let job of model.jobs">
-      <div class="timeline-img" appScrollAnimation="0.90">
+      <div class="timeline-img" appScrollAnimation="0.80">
         <div class="pulse"></div>
         <div class="pulse pulse-delay"></div>
         <div class="overlay"></div>
         <img src="{{'assets/images/' + job.icon }}" alt="{{ job.title }}">
       </div>
 
-      <div class="timeline-content" appScrollAnimation="0.90">
+      <div class="timeline-content" appScrollAnimation="0.80">
         <h2 class="company"><b> <i class="fa-solid fa-cube"></i> {{ job.company }}</b></h2>
           <ul class="promotion-list">
             <li *ngFor="let promo of job.promotions" class="promotion">
