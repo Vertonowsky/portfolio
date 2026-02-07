@@ -62,7 +62,7 @@
   align-self: flex-start;
   height: 4px;
   margin-bottom: 5px;
-  background: linear-gradient(90deg, #00B9FF 0%, #8254F5 100%);
+  background: var(--gradient-straight-line);
   animation: 1s slideFromLeftSlightly;
 }
 

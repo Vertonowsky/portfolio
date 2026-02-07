@@ -141,7 +141,6 @@
   },
   "projectSection": {
     "title": "My projects",
-    "technologiesUsed": "Technologies used:",
     "projects": [
       {
         "title": "Online-Courses",

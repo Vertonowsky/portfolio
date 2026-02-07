@@ -1,11 +1,14 @@
 :root {
-  --color-blue: #2BA8D6;
+  --color-blue: #3587D8;
   --color-title: #595959;
 
-  --color-default: #C5C6C6;
+  --color-default: #8e949a;
+  --color-white: #8e949a;
   --color-gray: #808287;
   --color-gold: #B2A171;
 
+  --gradient-light-blue: linear-gradient(90deg,rgba(3, 173, 229, 1) 0%, rgba(92, 163, 255, 1) 100%);
+  --gradient-straight-line: linear-gradient(90deg, #00B9FF 0%, #8254F5 100%);
 
   --font-size-big: 22px;
   --font-size-title: 18px;
@@ -109,12 +112,40 @@ body::-webkit-scrollbar-corner {
     font-size: 20px;
   }
 
+.background_light_blue {
+  background: var(--gradient-light-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+  .technology_item {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #3a3e4b;
+    font-size: var(--font-size-normal);
+    border-radius: 15px;
+  }
 
 @media (max-width: 1280px) {
 
   .heading {
     font-size: 22px;
+  }
+
+}
+
+@media (max-width: 580px) {
+
+  .technology_item {
+    padding: 4px 6px;
   }
 
 }

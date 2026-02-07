@@ -10,7 +10,7 @@
       </div>
 
       <div class="timeline-content" appScrollAnimation="0.80">
-        <h2 class="company"><b> <i class="fa-solid fa-cube"></i> {{ job.company }}</b></h2>
+        <h2 class="company"><b class="background_light_blue"> <i class="fa-solid fa-cube"></i> {{ job.company }}</b></h2>
           <ul class="promotion-list">
             <li *ngFor="let promo of job.promotions" class="promotion">
               <p class="title">{{ promo.title }} <span *ngIf="promo.current" class="badge-current"> {{ model.currentJobTitle }} </span></p>
@@ -27,7 +27,7 @@
                 <li *ngFor="let step of job.steps">{{ step }}</li>
               </ul>
               <ul class="technologies">
-                <li *ngFor="let technology of job.technologies">{{ technology }}</li>
+                <li *ngFor="let technology of job.technologies" class="technology_item">{{ technology }}</li>
               </ul>
             </li>
           </ul>

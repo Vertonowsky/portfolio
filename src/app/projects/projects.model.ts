@@ -1,6 +1,5 @@
 export interface ProjectSection {
   title: string;
-  technologiesUsed: string;
   projects: Project[];
   projectImages: string[];
 }

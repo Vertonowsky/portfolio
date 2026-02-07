@@ -1,11 +1,10 @@
 <div class="project_details">
   <div class="horizontal_line"></div>
-  <p class="project_title">{{ project.title  }}</p>
+  <p class="project_title background_light_blue">{{ project.title  }}</p>
   <p class="project_description">{{ project.description }}</p>
 
-  <p class="title">{{ model?.technologiesUsed }}</p>
-  <div class="tech_container">
-    <span class="tech" *ngFor="let technology of project.technologies">{{ technology }}</span>
+  <div class="technologies">
+    <span *ngFor="let technology of project.technologies" class="technology_item">{{ technology }}</span>
   </div>
 
   <div class="buttons">

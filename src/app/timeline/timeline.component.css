@@ -137,11 +137,6 @@
   .timeline-content .company b {
     font-weight: bold;
     margin: 0;
-    background: linear-gradient(90deg,rgba(3, 173, 229, 1) 0%, rgba(92, 163, 255, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
   }
 
   .timeline-content .company i {
@@ -169,13 +164,13 @@
   .timeline-content p {
     margin: 3px 0;
     line-height: 20px;
-    color: #8e949a;
+    color: var(--color-default);
   }
 
 .timeline-content .steps {
   padding-left: 20px;
   margin: 0;
-  color: #8e949a;
+  color: var(--color-default);
   list-style: outside;
 }
 
@@ -188,23 +183,18 @@
   }
 
 .timeline-content .technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
   margin: 15px 0 0 0;
   padding: 0;
-  color: #8e949a;
   font-size: var(--font-size-normal);
 }
 
-  .timeline-content .technologies li {
-    display: inline-block;
-    padding: 8px 12px;
-    border: 1px solid #3a3e4b;
-    margin: 5px;
-    border-radius: 15px;
-  }
-
-  .timeline-content .technologies li:last-child {
-    margin-bottom: 0;
-  }
+.timeline-content .technologies li:last-child {
+  margin-bottom: 0;
+}
 
 .timeline-content .date {
   position: relative;
@@ -348,10 +338,6 @@
 
   .timeline-content .technologies {
     font-size: var(--font-size-phone);
-  }
-
-  .timeline-content .technologies li {
-    padding: 4px 6px;
   }
 
 }

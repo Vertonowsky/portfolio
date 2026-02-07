@@ -8,12 +8,13 @@
   width: 100px;
   height: 3px;
   margin: 0;
-  background: #CECECE;
+  background: var(--gradient-straight-line);
 }
 
 .project_title {
   padding-top: 7px;
   margin: 0;
+  font-weight: bold;
   font-size: var(--font-size-big);
   color: var(--color-gold);
 }
@@ -21,6 +22,7 @@
 .project_description {
   margin-bottom: 20px;
   font-size: 16px;
+  line-height: 22px;
 }
 
 .project_details .title {
@@ -40,8 +42,8 @@
 .buttons a {
   display: flex;
   align-items: center;
-  color: var(--color-gold);
-  border: 1px solid var(--color-gold);
+  color: #4c94dc;
+  border: 2px solid #184b7d;
   font-size: var(--font-size-normal);
   border-radius: 10px;
   padding: 8px 10px;
@@ -58,28 +60,6 @@
   margin-right: 5px;
 }
 
-.tech_container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.tech {
-  position: relative;
-  box-sizing: border-box;
-  background: #41434D;
-  padding: 8px 12px;
-  border-radius: 10px;
-  font-size: var(--font-size-normal);
-  cursor: default;
-  transition: background 0.3s;
-}
-
-.tech:hover {
-  background: #565966;
-}
-
 @media screen and (max-width: 780px) {
 
   .project_title {
@@ -92,12 +72,6 @@
 
   .project_details .title {
     font-size: var(--font-size-normal);
-  }
-
-  .tech {
-    padding: 6px 10px;
-    border-radius: 8px;
-    font-size: var(--font-size-smaller);
   }
 
   .buttons a {
