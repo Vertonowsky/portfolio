@@ -6,7 +6,6 @@ import {TranslateModule, TranslateService} from "@ngx-translate/core";
 import {AppModule} from "../app.module";
 import {ScholarshipComponent} from "./scholarship/scholarship.component";
 import {AboutMe} from "./about-me.model";
-import {take} from "rxjs";
 
 @Component({
   selector: 'app-about-me',
@@ -58,7 +57,8 @@ export class AboutMeComponent {
   }
 
   triggerNextSwipe() {
-    if (!this.model) return;
+    if (!this.model)
+      return;
 
     const count = 3;
     const indexes = new Set<number>();
