@@ -1,13 +1,9 @@
-
-
 #footer {
   position: relative;
   width: 100%;
-  background: #1C1E21;
   padding: 70px 0 35px 0;
   z-index: 3;
 }
-
 
 #footer .inner {
   width: 90%;
@@ -43,29 +39,6 @@
   margin: 0 0 3px 0;
 }
 
-.list_link {
-  position: relative;
-  color: #9EA1B3;
-  font-size: var(--font-size-normal);
-}
-
-.list_link:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: -4px;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-
-.list_link:hover:after {
-  width: 100%;
-  left: 0;
-}
 
 
 
@@ -90,13 +63,17 @@
   font-size: var(--font-size-normal);
 }
 
-#social {
+.linkers {
   position: relative;
   display: flex;
   justify-items: center;
   justify-content: center;
+  gap: 5px;
 }
 
+  .social_link i {
+    margin-right: 0;
+  }
 
 
 @media screen and (max-width: 1024px) {
@@ -172,7 +149,7 @@
     padding: 0 5px;
   }
 
-  #social {
+  .linkers {
     margin: 10px 0 15px 0;
   }
 

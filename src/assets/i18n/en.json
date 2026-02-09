@@ -130,7 +130,7 @@
   "CONTACT_FRAME_DESCRIPTION_2": "collaboration",
   "CONTACT_FRAME_DESCRIPTION_3": ". I encourage you to contact me - I believe we will find a common path to success.",
   "footer": {
-    "title": "Copyright © 2024. Designed by Bartosz Malec"
+    "title": "Copyright © {{year}}. Designed by Bartosz Malec"
   },
   "header": {
     "start": "Start",

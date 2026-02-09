@@ -3,9 +3,9 @@
     <div id="footer_title"></div>
 
     <div id="footer_bottom">
-      <p class="info"> {{ model?.title }}</p>
+      <p class="info"> {{ 'footer.title' | translate: {year: currentYear} }}</p>
 
-      <div id="social">
+      <div class="linkers">
         <a href="https://www.linkedin.com/in/bartosz-malec-a6a36418b/" target="_blank" class="social_link"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/Vertonowsky" target="_blank" class="social_link"><i class="fa-brands fa-github"></i></a>
       </div>

@@ -130,7 +130,7 @@
   "CONTACT_FRAME_DESCRIPTION_2": "współpracę",
   "CONTACT_FRAME_DESCRIPTION_3": ". Zachęcam do kontaktu – jestem przekonany, że znajdziemy wspólną ścieżkę do sukcesu.",
   "footer": {
-    "title": "Copyright © 2025. Zaprojektowane przez Bartosza Malec"
+    "title": "Copyright © {{year}}. Zaprojektował Bartosz Malec"
   },
   "header": {
     "start": "Start",

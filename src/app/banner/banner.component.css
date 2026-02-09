@@ -91,7 +91,7 @@
 }
 
 
-#linkers {
+.linkers {
   position: absolute;
   box-sizing: border-box;
   width: 100%;
@@ -278,7 +278,7 @@
     display: none;
   }
 
-  #linkers {
+  .linkers {
     gap: 6px;
   }
 
@@ -348,7 +348,7 @@
     font-size: 16px;
   }
 
-  #linkers {
+  .linkers {
     position: relative;
     margin-top: 25px;
     justify-content: center;
@@ -405,7 +405,7 @@
     width: 95%;
   }
 
-  #linkers {
+  .linkers {
     width: 100%;
   }
 
@@ -422,7 +422,7 @@
     text-align: center;
   }
 
-  #linkers {
+  .linkers {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 10px;
