@@ -6,6 +6,7 @@ import {TranslateModule, TranslateService} from "@ngx-translate/core";
 import {AppModule} from "../app.module";
 import {ScholarshipComponent} from "./scholarship/scholarship.component";
 import {AboutMe} from "./about-me.model";
+import {take} from "rxjs";
 
 @Component({
   selector: 'app-about-me',
@@ -34,33 +35,45 @@ export class AboutMeComponent {
 
   activeSwipeIndexes: number[] = [];
   animationDuration = 3000; // animation duration in ms
+  swipeTimeout?: number;
+
 
   ngOnInit() {
     this.translate.stream('aboutMe').subscribe((data: AboutMe) => {
       this.model = data;
-
-      this.triggerNextSwipe();
+      this.restartAnimation();
     });
   }
 
-  // glow animation
+  restartAnimation() {
+    this.stopAnimation();
+    this.triggerNextSwipe();
+  }
+
+  stopAnimation() {
+    if (this.swipeTimeout) {
+      clearTimeout(this.swipeTimeout);
+      this.swipeTimeout = undefined;
+    }
+  }
+
   triggerNextSwipe() {
-    if (this.model == undefined)
-      return;
+    if (!this.model) return;
 
     const count = 3;
     const indexes = new Set<number>();
 
     while (indexes.size < count) {
-      indexes.add(Math.floor(Math.random() * this.model.technologies.length));
+      indexes.add(
+        Math.floor(Math.random() * this.model.technologies.length)
+      );
     }
 
     this.activeSwipeIndexes = Array.from(indexes);
 
-    setTimeout(() => {
+    this.swipeTimeout = window.setTimeout(() => {
       this.activeSwipeIndexes = [];
       this.triggerNextSwipe();
     }, this.animationDuration);
   }
-
 }

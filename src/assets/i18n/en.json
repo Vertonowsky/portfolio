@@ -4,7 +4,7 @@
     "title": "Education",
     "scholarships": [
       {
-        "title": "Innowacje w przedsiębiorswach",
+        "title": "Innovations in Enterpreneurship",
         "description": "International School for Social and Business Studies",
         "country": "Slovenia",
         "icon": "celje.png",
@@ -18,7 +18,7 @@
         "date": "2024"
       },
       {
-        "title": "Rozwój aplikacji internetowych",
+        "title": "Web Application Development",
         "description": "Euromind",
         "country": "Hiszpania",
         "icon": "euromind.png",
