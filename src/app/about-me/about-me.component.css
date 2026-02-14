@@ -217,6 +217,10 @@
 
 @media (max-width: 980px) {
 
+  #about_me {
+    padding-top: 20px;
+  }
+
   #about_me .container {
     flex-direction: column;
     gap: 100px;
@@ -226,7 +230,44 @@
   #about_me .inner .left {
     position: relative;
     width: 100%;
+    flex-direction: column;
+    gap: 35px;
   }
+
+  .education_container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+    .education_container .block {
+      width: 49%;
+      padding: 25px 70px 25px 20px;
+    }
+
+    .education_container .heading {
+      width: 100%;
+    }
+
+  .scholarship_container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+    .scholarship_container .block {
+      width: 45%;
+      align-self: stretch;
+      padding: 20px 20px 10px 20px;
+    }
+
+    .scholarship_container > .block:nth-of-type(2n) {
+      align-self: stretch;
+    }
+
 
   .technology_container {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -244,6 +285,34 @@
   #about_me {
     padding-bottom: 50px;
   }
+
+  .education_container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+    .education_container .block {
+      width: 100%;
+      padding: 35px 70px 35px 25px;
+    }
+
+  .scholarship_container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+    .scholarship_container .block {
+      width: 80%;
+      padding: 15px;
+      margin: 0 5%;
+      align-self: auto;
+    }
+
+    .scholarship_container > .block:nth-of-type(2n) {
+      align-self: flex-end;
+    }
 
 }
 
@@ -265,6 +334,20 @@
   .technology {
     max-width: 100px;
     height: 70px;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .education_container .block {
+    padding: 15px 60px 15px 15px;
+  }
+
+  .scholarship_container .block {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
   }
 
 }

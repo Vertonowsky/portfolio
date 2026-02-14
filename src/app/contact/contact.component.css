@@ -2,7 +2,17 @@
   position: relative;
   width: 100%;
   height: 500px;
-  background: #28292E;
+  background:
+    radial-gradient(ellipse 60% 40% at 35% 60%,
+    rgba(40, 20, 50, 0.5) 0%,    /* Ciemny fiolet */
+    rgba(25, 10, 30, 0.5) 30%,    /* Śliwka */
+    rgba(15, 5, 20, 0.5) 60%,     /* Ciemna oberżyna */
+    transparent 100%),
+
+    linear-gradient(180deg,
+    #0A020F 0%,
+    #050108 45%,
+    #0C0512 100%);
 }
 
 #contact .inner {
@@ -53,7 +63,7 @@
   left: 5%;
   width: 80%;
   height: 325px;
-  background: #202024;
+  background: #0c1c2a66;
   border-bottom-left-radius: 30px;
   padding: 30px 20px;
   text-align: center;
@@ -124,7 +134,7 @@
   right: 100px;
   width: 400px;
   height: 500px;
-  background: #202024;
+  background: transparent;
   box-shadow: 0 0 25px 0 #3C3D42;
   border-radius: 20px;
   padding: 45px 25px 15px 25px;

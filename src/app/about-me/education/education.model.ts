@@ -3,5 +3,6 @@ export interface University {
   icon: string;
   description: string;
   date: string;
+  degree: string;
   customBackground: boolean;
 }

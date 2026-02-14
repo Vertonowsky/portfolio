@@ -335,8 +335,8 @@
   }
 
   #about h1 {
-    margin-left: -5px;
-    font-size: 10.7vw;
+    margin-left: -25px;
+    font-size: 10vw;
   }
 
   #about .profession {
@@ -373,7 +373,7 @@
   }
 
   #about h1 {
-    font-size: 12vw;
+    font-size: 11vw;
   }
 
   #about .profession {
@@ -388,6 +388,11 @@
 }
 
 @media (max-width: 380px) {
+
+  #about h1 {
+    font-size: 11.5vw;
+    margin-left: -8px;
+  }
 
   #about .profession {
     font-size: 1em;
@@ -415,6 +420,11 @@
 
   #banner #about {
     padding-bottom: 20px;
+  }
+
+  #about h1 {
+    font-size: 11vw;
+    margin-left: -5px;
   }
 
   #about .profession {

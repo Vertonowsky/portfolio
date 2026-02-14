@@ -101,17 +101,19 @@
     ],
     "universities": [
       {
-        "title": "Informatyka Stosowana - Magister",
+        "title": "Informatyka Stosowana",
         "description": "Politechnika Warszawska",
         "icon": "pw.png",
         "date": "2025 - 2026",
+        "degree": "Magister",
         "customBackground": true
       },
       {
-        "title": "Informatyka - Inżynier",
+        "title": "Informatyka",
         "description": "Szkoła Główna Gospodarstwa Wiejskiego w Warszawie",
         "icon": "sggw.png",
         "date": "2021 - 2025",
+        "degree": "Inżynier",
         "customBackground": true
       }
     ]

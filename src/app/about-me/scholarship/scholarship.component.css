@@ -47,14 +47,41 @@ p {
   background: #143c5f8c;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 980px) {
+
+  .info h3 {
+    font-size: 16px;
+  }
+
+  p {
+    margin: 4px 0;
+    font-size: var(--font-size-smaller);
+  }
 
   img {
-    max-width: 50px;
+    max-width: 35px;
+    right: 10px;
+    top: 10px;
   }
+
+}
+
+@media (max-width: 768px) {
+
+  p {
+    margin: 3px 0;
+  }
+
+}
+
+@media (max-width: 650px) {
 
   .info h3 {
     font-size: var(--font-size-normal);
+  }
+
+  .info p {
+    font-size: var(--font-size-smaller);
   }
 
 }
