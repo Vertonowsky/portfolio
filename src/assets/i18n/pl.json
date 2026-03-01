@@ -1,6 +1,5 @@
 {
   "aboutMe": {
-    "technologiesTitle": "Stos technologiczny",
     "title": "Wykształcenie",
     "scholarships": [
       {
@@ -23,80 +22,6 @@
         "country": "Spain",
         "icon": "euromind.png",
         "date": "2021"
-      }
-    ],
-    "technologies": [
-      {
-        "name": "Java 21",
-        "icon": "java.png"
-      },
-      {
-        "name": "Spring",
-        "icon": "spring.png"
-      },
-      {
-        "name": "Hibernate",
-        "icon": "hibernate.png"
-      },
-      {
-        "name": "JPA",
-        "icon": "spring-data.png"
-      },
-      {
-        "name": "Thymeleaf",
-        "icon": "thymeleaf.png"
-      },
-      {
-        "name": "PostgreSQL",
-        "icon": "postgresql.png"
-      },
-      {
-        "name": "MySQL",
-        "icon": "mysql.png"
-      },
-      {
-        "name": "ActiveMQ",
-        "icon": "activemq.png"
-      },
-      {
-        "name": "HTML",
-        "icon": "html.png"
-      },
-      {
-        "name": "CSS",
-        "icon": "css.png"
-      },
-      {
-        "name": "JavaScript",
-        "icon": "javascript.png"
-      },
-      {
-        "name": "Git",
-        "icon": "git.png"
-      },
-      {
-        "name": "GitHub",
-        "icon": "github_white.png"
-      },
-      {
-        "name": "Jenkins",
-        "icon": "jenkins.png"
-      },
-      {
-        "name": "IntelliJ",
-        "icon": "intellij-idea.png"
-      },
-      {
-        "name": "Postman",
-        "icon": "postman.png"
-      },
-      {
-        "name": "Jira",
-        "icon": "jira.png"
-      },
-      {
-        "name": "Confluence",
-        "icon": "confluence.png"
       }
     ],
     "universities": [
@@ -123,8 +48,8 @@
     "profession": "Inżynier Oprogramowania Java",
     "description": "Jestem odpowiedzialny za rozwój i utrzymanie jednej z największych platform streamingowych w Polsce - player.pl."
   },
-  "CONTACT_TITLE": "Stwórzmy coś niesamowitego",
-  "CONTACT_DESCRIPTION": "Jestem otwarty i gotowy na stawienie czoła nowym wyzwaniom, za którymi idą wartościowe relacje zawodowe. Jeśli uważasz, że pasuję do Twojego zespołu, to daj znać!",
+  "CONTACT_TITLE": "Cenię technologię, która ma praktyczne zastosowanie",
+  "CONTACT_DESCRIPTION": "Skupiam się na tworzeniu rozwiązań, które przynoszą konkretną wartość. Lubię wyzwania, które wymagają analitycznego myślenia, kreatywności i odpowiedzialności za efekt końcowy.",
   "CONTACT_FRAME_TITLE": "Razem możemy więcej!",
   "CONTACT_FRAME_DESCRIPTION": "Łączę techniczne podejście z praktycznym myśleniem o rozwiązaniach. Jeśli szukasz kogoś do wspólnego działania to zapraszam do kontaktu.",
   "footer": {
@@ -213,6 +138,83 @@
       "project-1-720p.png",
       "project-2-720p.png",
       "project-3-720p.png"
+    ]
+  },
+  "technologySection": {
+    "title": "Stos technologiczny",
+    "technologies": [
+      {
+        "name": "Java 21",
+        "icon": "java.png"
+      },
+      {
+        "name": "Spring",
+        "icon": "spring.png"
+      },
+      {
+        "name": "Hibernate",
+        "icon": "hibernate.png"
+      },
+      {
+        "name": "JPA",
+        "icon": "spring-data.png"
+      },
+      {
+        "name": "Thymeleaf",
+        "icon": "thymeleaf.png"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "postgresql.png"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql.png"
+      },
+      {
+        "name": "ActiveMQ",
+        "icon": "activemq.png"
+      },
+      {
+        "name": "HTML",
+        "icon": "html.png"
+      },
+      {
+        "name": "CSS",
+        "icon": "css.png"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "javascript.png"
+      },
+      {
+        "name": "Git",
+        "icon": "git.png"
+      },
+      {
+        "name": "GitHub",
+        "icon": "github_white.png"
+      },
+      {
+        "name": "Jenkins",
+        "icon": "jenkins.png"
+      },
+      {
+        "name": "IntelliJ",
+        "icon": "intellij-idea.png"
+      },
+      {
+        "name": "Postman",
+        "icon": "postman.png"
+      },
+      {
+        "name": "Jira",
+        "icon": "jira.png"
+      },
+      {
+        "name": "Confluence",
+        "icon": "confluence.png"
+      }
     ]
   },
   "timeline": {

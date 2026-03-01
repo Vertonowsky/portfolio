@@ -1,0 +1,13 @@
+<div id="technology_section">
+  <div class="inner">
+      <div class="container" appScrollAnimation="0.75">
+        <h2 class="heading"> {{ model?.title }} </h2>
+        <div class="item_list">
+          <app-technology-item class="technology" *ngFor="let technology of model?.technologies; let i = index"
+                               [technology]="technology"
+                               [class.glow-swipe]="activeSwipeIndexes.includes(i)">
+          </app-technology-item>
+        </div>
+    </div>
+  </div>
+</div>

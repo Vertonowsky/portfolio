@@ -81,7 +81,6 @@
   height: 100%;
   left: 250px;
   text-align: left;
-  color: #A3A4A6;
 }
 
 #box_1 h2 {
@@ -97,7 +96,7 @@
   height: 180px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  background: rgba(9 15 24 / 0.3);
+  background: rgba(11 16 25 / 0.6);
   z-index: 2;
 }
 

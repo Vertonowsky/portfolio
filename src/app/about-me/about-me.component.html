@@ -1,7 +1,6 @@
 <div id="about_me">
   <div class="inner">
-    <div class="container">
-      <div class="left">
+      <div class="container">
         <div class="education_container" appScrollAnimation="0.85">
           <h2 class="heading"><i class="fa-solid fa-graduation-cap"></i> {{ model?.title }} </h2>
           <app-education class="block" *ngFor="let university of model?.universities"
@@ -13,17 +12,6 @@
           <app-scholarship class="block" *ngFor="let scholarship of model?.scholarships"
                          [scholarship]="scholarship">
           </app-scholarship>
-        </div>
-      </div>
-
-      <div class="right" appScrollAnimation="0.75">
-        <h2 class="heading"> {{ model?.technologiesTitle }} </h2>
-        <div class="technology_container">
-          <app-technology class="technology" *ngFor="let technology of model?.technologies; let i = index"
-                          [technology]="technology"
-                          [class.glow-swipe]="activeSwipeIndexes.includes(i)">
-          </app-technology>
-        </div>
       </div>
     </div>
   </div>
