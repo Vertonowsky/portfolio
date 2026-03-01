@@ -23,13 +23,13 @@
 }
 
 #projects_container .heading {
-  margin-bottom: 30px;
+  margin: 60px auto 30px auto;
 }
 
 .title {
   margin-bottom: 35px;
   font-size: 28px;
-  color: var(--color-gold);
+  color: var(--color-white);
 }
 
 .project_container {
@@ -37,6 +37,7 @@
 }
 
 #slider.is-hidden,
+#projects_container .heading.is-hidden,
 .inner_section.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -51,6 +52,10 @@
 }
 
 #slider.slideAnimation {
+  animation: fadeIn 1s ease-in-out;
+}
+
+#projects_container .heading.slideAnimation {
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -151,11 +156,11 @@
 }
 
 #slider .slide:hover {
-  background: #75AEC7;
+  background: #0083e1;
 }
 
 #slider .slide.active {
-  background: #46A0C7;
+  background: #066fbb;
 }
 
 

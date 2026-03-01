@@ -125,12 +125,8 @@
   },
   "CONTACT_TITLE": "Let's create incredible things together",
   "CONTACT_DESCRIPTION": "I am open-minded and ready to face new challenges followed by valuable working relationships. If you think I would fit into your team, let me know!",
-  "CONTACT_EMAIL_ME": "E-mail me!",
-  "CONTACT_FRAME_TITLE": "Let's talk!",
-  "CONTACT_FRAME_QUOTE": "\"If you want to go fast, go alone. If you want to go far, go together.\"",
-  "CONTACT_FRAME_DESCRIPTION_1": "Words that wonderfully define one of the key values - ",
-  "CONTACT_FRAME_DESCRIPTION_2": "collaboration",
-  "CONTACT_FRAME_DESCRIPTION_3": ". I encourage you to contact me - I believe we will find a common path to success.",
+  "CONTACT_FRAME_TITLE": "Let’s Build Together!",
+  "CONTACT_FRAME_DESCRIPTION": "I combine a technical approach with practical, solution-oriented thinking. If you're looking for someone to collaborate with, feel free to get in touch.",
   "footer": {
     "title": "Copyright © {{year}}. Designed by Bartosz Malec"
   },

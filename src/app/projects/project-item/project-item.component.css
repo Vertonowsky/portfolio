@@ -16,7 +16,6 @@
   margin: 0;
   font-weight: bold;
   font-size: var(--font-size-big);
-  color: var(--color-gold);
 }
 
 .project_description {
@@ -42,17 +41,17 @@
 .buttons a {
   display: flex;
   align-items: center;
-  color: #4c94dc;
-  border: 2px solid #184b7d;
+  color: #cfcfcf;
+  border: 2px solid #064569;
   font-size: var(--font-size-normal);
   border-radius: 10px;
   padding: 8px 10px;
-  background: transparent;
+  background: rgba(8 17 26 / 0.8);
   transition: background 0.3s;
 }
 
 .buttons a:hover {
-  background: #2F3238;
+  background: rgba(25 46 68 / 0.7);
 }
 
 .buttons a > i {

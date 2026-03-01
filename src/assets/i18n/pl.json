@@ -125,12 +125,8 @@
   },
   "CONTACT_TITLE": "Stwórzmy coś niesamowitego",
   "CONTACT_DESCRIPTION": "Jestem otwarty i gotowy na stawienie czoła nowym wyzwaniom, za którymi idą wartościowe relacje zawodowe. Jeśli uważasz, że pasuję do Twojego zespołu, to daj znać!",
-  "CONTACT_EMAIL_ME": "Wyślij e-mail!",
-  "CONTACT_FRAME_TITLE": "Porozmawiajmy!",
-  "CONTACT_FRAME_QUOTE": "\"Jeśli chcesz iść szybko, idź sam. Jeśli chcesz zajść daleko, idźcie razem.\"",
-  "CONTACT_FRAME_DESCRIPTION_1": "Słowa, które w cudowny sposób określają jedną z kluczowych wartości - ",
-  "CONTACT_FRAME_DESCRIPTION_2": "współpracę",
-  "CONTACT_FRAME_DESCRIPTION_3": ". Zachęcam do kontaktu – jestem przekonany, że znajdziemy wspólną ścieżkę do sukcesu.",
+  "CONTACT_FRAME_TITLE": "Razem możemy więcej!",
+  "CONTACT_FRAME_DESCRIPTION": "Łączę techniczne podejście z praktycznym myśleniem o rozwiązaniach. Jeśli szukasz kogoś do wspólnego działania to zapraszam do kontaktu.",
   "footer": {
     "title": "Copyright © {{year}}. Zaprojektował Bartosz Malec"
   },

@@ -19,6 +19,8 @@
 }
 
 #banner::before {
+  max-width: 2400px;
+  margin: auto;
   content: "";
   position: absolute;
   inset: 0;

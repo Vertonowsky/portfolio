@@ -2,17 +2,26 @@
   position: relative;
   width: 100%;
   height: 500px;
+}
+
+#contact::before {
+  max-width: 2400px;
+  margin: auto;
+  content: "";
+  position: absolute;
+  inset: 0;
   background:
-    radial-gradient(ellipse 60% 40% at 35% 60%,
-    rgba(40, 20, 50, 0.5) 0%,    /* Ciemny fiolet */
-    rgba(25, 10, 30, 0.5) 30%,    /* Śliwka */
-    rgba(15, 5, 20, 0.5) 60%,     /* Ciemna oberżyna */
+    radial-gradient(ellipse 40% 80% at 70% 40%,
+    rgba(21 78 115 / 0.5) 0%,
+    rgba(25 90 134 / 0.5) 30%,
+    rgba(6 12 19 / 0.3) 60%,
     transparent 100%),
 
-    linear-gradient(180deg,
-    #0A020F 0%,
-    #050108 45%,
-    #0C0512 100%);
+    radial-gradient(ellipse 25% 80% at 20% 90%,
+    rgba(19 55 94 / 0.5) 0%,
+    rgba(17 62 107 / 0.5) 30%,
+    rgba(6 12 19 / 0.3) 60%,
+    transparent 100%)
 }
 
 #contact .inner {
@@ -39,21 +48,6 @@
   height: 100%;
 }
 
-#contact .button_contact {
-  padding: 12px 0;
-  border-radius: 15px;
-  background: #46A0C7;
-  cursor: pointer;
-  font-size: var(--font-size-normal);
-  border: none;
-  color: #fff;
-  transition: background 0.3s;
-}
-
-#contact .button_contact:hover {
-  background: #3E8AAD;
-}
-
 .box {
   position: absolute;
 }
@@ -63,7 +57,8 @@
   left: 5%;
   width: 80%;
   height: 325px;
-  background: #0c1c2a66;
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
   border-bottom-left-radius: 30px;
   padding: 30px 20px;
   text-align: center;
@@ -92,17 +87,7 @@
 #box_1 h2 {
   width: 100%;
   font-size: 30px;
-  color: var(--color-gold);
-}
-
-#box_1 .button_contact {
-  position: absolute;
-  text-align: center;
-  bottom: -20px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 300px;
+  color: var(--color-white);
 }
 
 #box_2 {
@@ -111,18 +96,19 @@
   width: 300px;
   height: 180px;
   border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background: #1D1E21;
+  border-top-left-radius: 20px;
+  background: rgba(9 15 24 / 0.3);
   z-index: 2;
 }
 
 #box_3 {
-  bottom: 0;
-  left: 0;
-  width: 150px;
-  height: 150px;
-  background: #1E1F24;
-  border-top-right-radius: 30px;
+  top: 0;
+  left: -80px;
+  width: 350px;
+  height: 120px;
+  background: rgba(12 25 43 / 0.4);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   z-index: 1;
 }
 
@@ -134,8 +120,9 @@
   right: 100px;
   width: 400px;
   height: 500px;
-  background: transparent;
-  box-shadow: 0 0 25px 0 #3C3D42;
+  background: rgba(15 20 26 / 0.5);
+  border: 1px solid #2c303c;
+  box-shadow: 0 0 25px 0 #2c303c;
   border-radius: 20px;
   padding: 45px 25px 15px 25px;
   text-align: center;
@@ -146,27 +133,21 @@
   animation: 1s slideFromRight ease-in-out;
 }
 
-#frame .quote {
-  color: var(--color-gold);
-  font-weight: bold;
-  font-style: italic;
-  margin: 30px 0;
-}
-
-#frame b {
-  color: var(--color-gold);
-}
-
 #frame h2 {
-  font-size: 18px;
+  font-size: 28px;
   margin: 10px 0 0 0;
   width: 100%;
   text-align: center;
+  background: linear-gradient(-90deg, #41B9F9 0%, #7B89FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 #frame .desc {
-  margin-bottom: 30px;
-  color: #A3A4A6;
+  width: 90%;
+  margin: 30px auto;
 }
 
 #frame .button_contact {
@@ -174,9 +155,14 @@
   width: 80%;
   max-width: 220px;
   margin: auto;
+  padding: 15px 15px;
+  border-radius: 15px;
   cursor: default;
-  padding: 10px 15px;
-  background: #A18A4D;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #1c2f43;
+  font-size: var(--font-size-normal);
+  transition: background 0.3s, border 0.3s;
 }
 
 #frame .button_contact i {
@@ -184,9 +170,9 @@
 }
 
 #frame .button_contact:hover {
-  background: #A18A4D;
+  background: rgba(12 39 57 / 0.8);
+  border: 2px solid #243c55;
 }
-
 
 
 
@@ -251,10 +237,6 @@
     left: 5%;
   }
 
-  #box_1 .button_contact {
-    width: 220px;
-  }
-
   #box_2 {
     width: 100px;
     height: 100px;
@@ -269,10 +251,11 @@
     right: 15px;
     width: 300px;
     height: auto;
-    padding: 15px 20px 45px 20px;
+    padding: 15px 10px 35px 10px;
   }
 
   #frame h2 {
+    font-size: 22px;
     margin-bottom: 30px;
   }
 
@@ -307,13 +290,6 @@
     text-align: center;
   }
 
-  #box_1 .button_contact {
-    position: relative;
-    bottom: auto;
-    width: auto;
-    padding: 10px 30px;
-  }
-
   #box_1 p {
     margin-bottom: 30px;
   }
@@ -334,6 +310,14 @@
     height: auto;
     top: 40px;
     right: auto;
+  }
+
+  #frame h2 {
+    font-size: 20px;
+  }
+
+  #frame .desc {
+    margin-top: 10px;
   }
 
 }
@@ -378,7 +362,7 @@
     font-size: var(--font-size-phone);
   }
 
-  #box_1 .button_contact, #frame .button_contact {
+  #frame .button_contact {
     position: absolute;
     left: 0;
     right: 0;
@@ -394,10 +378,6 @@
   #frame h2 {
     font-size: 16px;
     margin-bottom: 20px;
-  }
-
-  #frame .quote {
-    margin: 20px 0;
   }
 
   #frame .button_contact {
