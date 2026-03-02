@@ -5,19 +5,19 @@
 }
 
 #contact::before {
-  max-width: 2400px;
+  max-width: 2000px;
   margin: auto;
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 40% 80% at 70% 40%,
+    radial-gradient(ellipse 700px 350px at 80% 50%,
     rgba(21 78 115 / 0.5) 0%,
     rgba(25 90 134 / 0.5) 30%,
     rgba(6 12 19 / 0.3) 60%,
     transparent 100%),
 
-    radial-gradient(ellipse 25% 80% at 20% 90%,
+    radial-gradient(ellipse 400px 250px at 20% 90%,
     rgba(19 55 94 / 0.5) 0%,
     rgba(17 62 107 / 0.5) 30%,
     rgba(6 12 19 / 0.3) 60%,
@@ -53,15 +53,16 @@
 }
 
 #box_1 {
+  position: absolute;
   top: 0;
-  left: 5%;
-  width: 80%;
+  left: 250px;
+  width: 500px;
   height: 325px;
   background: transparent;
   -webkit-backdrop-filter: blur(10px);
   border-bottom-left-radius: 30px;
   padding: 30px 20px;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   z-index: 3;
 }
@@ -73,14 +74,6 @@
 
 #box_1.slideAnimation {
   animation: 1s slideIn ease-in-out;
-}
-
-#box_1 .body {
-  position: relative;
-  width: 500px;
-  height: 100%;
-  left: 250px;
-  text-align: left;
 }
 
 #box_1 h2 {
@@ -103,7 +96,7 @@
 #box_3 {
   top: 0;
   left: -80px;
-  width: 350px;
+  width: 300px;
   height: 120px;
   background: rgba(12 25 43 / 0.4);
   border-bottom-left-radius: 30px;
@@ -125,6 +118,7 @@
   border-radius: 20px;
   padding: 45px 25px 15px 25px;
   text-align: center;
+  font-size: 16px;
   z-index: 5;
 }
 
@@ -181,8 +175,8 @@
     width: 90%;
   }
 
-  #box_1 .body {
-    width: 50%;
+  #box_1 {
+    width: 40%;
     left: 10%;
   }
 
@@ -191,18 +185,18 @@
 
 @media screen and (max-width: 1280px) {
 
+  #contact {
+    height: 400px;
+  }
+
   #contact .inner {
     width: 95%;
   }
 
   #box_1 {
-    width: 90%;
-    font-size: var(--font-size-normal);
-  }
-
-  #box_1 .body {
-    width: 46%;
+    width: 36%;
     left: 8%;
+    font-size: var(--font-size-normal);
   }
 
   #box_1 h2 {
@@ -211,11 +205,21 @@
 
   #box_2 {
     width: 150px;
-    height: 150px;
+    height: 115px;
+    right: 15px;
   }
 
   #frame {
-    right: 25px;
+    top: 75px;
+    right: 75px;
+    width: 340px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 45px 25px 15px 25px;
+  }
+
+  #frame h2 {
+    font-size: 20px;
   }
 
 }
@@ -223,39 +227,54 @@
 
 @media screen and (max-width: 1024px) {
 
-  #contact {
-    height: 450px;
+  #contact::before {
+    max-width: 1500px;
+    background:
+      radial-gradient(ellipse 600px 350px at 90% 45%,
+      rgba(21 78 115 / 0.5) 0%,
+      rgba(25 90 134 / 0.5) 30%,
+      rgba(6 12 19 / 0.3) 60%,
+      transparent 100%),
+
+      radial-gradient(ellipse 350px 200px at 20% 90%,
+      rgba(19 55 94 / 0.5) 0%,
+      rgba(17 62 107 / 0.5) 30%,
+      rgba(6 12 19 / 0.3) 60%,
+      transparent 100%)
   }
 
   #box_1 {
-    height: 300px;
+    width: 45%;
+    left: 5%;
+    font-size: var(--font-size-normal);
   }
 
-  #box_1 .body {
-    width: 50%;
-    left: 5%;
+  #box_1 h2 {
+    font-size: 20px;
   }
 
   #box_2 {
-    width: 100px;
-    height: 100px;
+    right: 0;
   }
 
   #box_3 {
-    width: 150px;
+    width: 220px;
     height: 75px;
   }
 
   #frame {
-    right: 15px;
+    right: 25px;
     width: 300px;
     height: auto;
-    padding: 15px 10px 35px 10px;
+    padding: 30px 15px 75px 15px;
+    font-size: var(--font-size-normal);
   }
 
   #frame h2 {
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 30px auto;
   }
 
 }
@@ -264,6 +283,16 @@
 
   #contact {
     height: auto;
+  }
+
+  #contact::before {
+    max-width: 1000px;
+    background:
+      radial-gradient(ellipse 520px 250px at 60% 70%,
+      rgba(21 78 115 / 0.5) 0%,
+      rgba(25 90 134 / 0.5) 30%,
+      rgba(6 12 19 / 0.3) 60%,
+      transparent 100%)
   }
 
   #contact .inner {
@@ -275,17 +304,9 @@
   #box_1 {
     position: relative;
     width: 90%;
-    top: 0;
+    top: auto;
     left: auto;
     height: auto;
-    text-align: center;
-    border-bottom-right-radius: 30px;
-  }
-
-  #box_1 .body {
-    width: 100%;
-    height: auto;
-    left: 0;
     text-align: center;
   }
 
@@ -294,10 +315,9 @@
   }
 
   #box_2 {
-    width: 120px;
-    height: 120px;
-    right: 0;
-    border-radius: 0 0 0 15px;
+    width: 140px;
+    height: 100px;
+    right: 15%;
   }
 
   #box_3 {
@@ -307,16 +327,27 @@
   #frame {
     position: relative;
     height: auto;
+    width: 47%;
+    min-width: 260px;
     top: 40px;
     right: auto;
+    padding: 30px 15px 65px 15px;
   }
 
   #frame h2 {
-    font-size: 20px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 
   #frame .desc {
-    margin-top: 10px;
+    margin: 10px auto 20px auto;
+  }
+
+  #frame .button_contact {
+    font-size: var(--font-size-smaller);
+    padding: 12px;
+    width: 90%;
   }
 
 }
@@ -324,54 +355,54 @@
 
 @media screen and (max-width: 580px) {
 
+  #box_1 {
+    font-size: var(--font-size-smaller);
+    padding: 0;
+  }
+
   #box_1 h2 {
     font-size: 18px;
   }
 
   #box_1 p {
-    font-size: var(--font-size-smaller);
+    margin-bottom: 0;
+  }
+
+  #box_2 {
+    width: 140px;
+    height: 100px;
+    right: 10%;
   }
 
   #frame {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  #frame p {
     font-size: var(--font-size-smaller);
+    padding: 30px 15px 45px 15px;
   }
 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
 
   #box_1 {
-    padding: 15px;
+    padding-bottom: 15px;
+    font-size: var(--font-size-phone);
   }
 
   #box_1 h2 {
     font-size: 16px;
   }
 
-  #box_1 .body {
-    padding-bottom: 40px;
-  }
-
-  #box_1 p, #frame p {
+  #frame .button_contact {
+    padding: 8px 6px;
     font-size: var(--font-size-phone);
   }
 
-  #frame .button_contact {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 80%;
-    padding: 8px 4px;
-  }
-
   #frame {
-    padding: 15px 15px 50px 15px;
+    width: 90%;
+    min-width: auto;
+    max-width: 260px;
+    padding: 15px 15px 40px 15px;
+    font-size: var(--font-size-phone);
   }
 
   #frame h2 {

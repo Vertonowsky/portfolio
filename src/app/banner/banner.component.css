@@ -19,7 +19,7 @@
 }
 
 #banner::before {
-  max-width: 2400px;
+  max-width: 2000px;
   margin: auto;
   content: "";
   position: absolute;
