@@ -154,6 +154,16 @@
     padding-top: 20px;
   }
 
+  #about_me::before {
+    max-width: 1500px;
+    background:
+      radial-gradient(ellipse 850px 400px at 30% 40%,
+      rgba(18, 60, 95, 0.6) 0%,
+      rgba(10, 38, 60, 0.6) 30%,
+      rgba(6 12 19 / 0.3) 60%,
+      transparent 100%)
+  }
+
   .container{
     position: relative;
     width: 100%;

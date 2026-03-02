@@ -142,6 +142,27 @@ body::-webkit-scrollbar-corner {
 
 }
 
+@media (max-width: 1024px) {
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .heading i {
+    padding: 8px;
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .heading {
+    font-size: 18px;
+  }
+
+}
+
 @media (max-width: 580px) {
 
   .technology_item {
@@ -154,7 +175,13 @@ body::-webkit-scrollbar-corner {
 
   .heading {
     width: 90%;
-    font-size: 19px;
+    font-size: 17px;
+  }
+
+  .heading i {
+    margin-right: 8px;
+    padding: 7px;
+    font-size: 16px;
   }
 
 }
@@ -162,6 +189,11 @@ body::-webkit-scrollbar-corner {
 @keyframes slideIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@keyframes slideFromTop {
+  0% { transform: translateY(-30%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }
 
 @keyframes slideFromRight {

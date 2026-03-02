@@ -16,8 +16,8 @@
   <div class="header_buttons" *ngIf="model">
     <a href="#banner">{{ model.start }}</a>
     <a href="#about_me">{{ model.aboutMe }}</a>
-    <a href="#projects_container">{{ model.projects }}</a>
-    <a href="#timeline_container">{{ model.experience }}</a>
+    <a href="#projects_section">{{ model.projects }}</a>
+    <a href="#timeline_section">{{ model.experience }}</a>
     <a href="#contact">{{ model.contact }}</a>
   </div>
 
@@ -30,8 +30,8 @@
   <div class="header_buttons">
     <a href="#banner" (click)="toggleMenu()">{{ model.start }}</a>
     <a href="#about_me" (click)="toggleMenu()">{{ model.aboutMe }}</a>
-    <a href="#projects_container" (click)="toggleMenu()">{{ model.projects }}</a>
-    <a href="#timeline_container" (click)="toggleMenu()">{{ model.experience }}</a>
+    <a href="#projects_section" (click)="toggleMenu()">{{ model.projects }}</a>
+    <a href="#timeline_section" (click)="toggleMenu()">{{ model.experience }}</a>
     <a href="#contact" (click)="toggleMenu()">{{ model.contact }}</a>
   </div>
 </div>

@@ -73,7 +73,7 @@
 }
 
 #box_1.slideAnimation {
-  animation: 1s slideIn ease-in-out;
+  animation: 1.2s slideFromTop ease-in-out;
 }
 
 #box_1 h2 {
