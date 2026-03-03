@@ -46,14 +46,14 @@
   "banner": {
     "fullName": "Bartosz Malec",
     "profession": "Java Software Engineer",
-    "description": "I am responsible for the development and maintenance of one of Poland’s largest streaming platforms — player.pl."
+    "description": "I am responsible for the development and maintenance of one of the largest streaming platforms in Poland – player.pl."
   },
   "CONTACT_TITLE": "I value technology that has practical applications",
   "CONTACT_DESCRIPTION": "I focus on building solutions that deliver real value. I enjoy challenges that require analytical thinking, creativity, and responsibility for the final outcome.",
   "CONTACT_FRAME_TITLE": "We can achieve more together!",
   "CONTACT_FRAME_DESCRIPTION": "I combine a technical approach with practical problem solving. If you're looking for someone to collaborate with, feel free to get in touch.",
   "footer": {
-    "title": "Copyright © {{year}}. Designed by Bartosz Malec"
+    "title": "Copyright {{year}} © Bartosz Malec"
   },
   "header": {
     "start": "Start",
