@@ -1,33 +1,49 @@
-# Portfolio
+## 📖 O Projekcie
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+Nowoczesne, responsywne portfolio prezentujące moje umiejętności, projekty i doświadczenie. Zaprojektowane z myślą o komfortowym i wygodnym zapoznaniem się ze mną.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📸 Preview
+<p align="center">
+  <img src="https://via.placeholder.com/800x450.png?text=Wstaw+Tu+Screenshot+Swojego+Portfolio" width="800" alt="Portfolio Preview" />
+</p>
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Stack Techniczny i Architektura
 
-## Build
+Responsywna aplikacja typu SPA stworzona w Angularze z zastosowaniem najnowszych standardów i dobrych praktyk webowych.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* ⚛️ **Angular:** Główny framework aplikacji webowej
+* 📝 **TypeScript:** Język używany w całym projekcie
+* 🚀 **angular-cli-ghpages:** Plugin do deployowania aplikacji na GitHub Pages
 
-## Running unit tests
+## 📂 Struktura Projektu
+```text
+src/
+├── app/            # Modularne komponenty UI
+├── assets/
+      ├── images/   # Obrazy, ikony
+      ├── i18n/     # Pliki tłumaczeń
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📦 Deployment
 
-## Running end-to-end tests
+Aplikacja może być wdrożona zarówno na własnej domenie, jak i na GitHub Pages. Poniżej znajduje się instrukcja wdrożenia na Github Pages:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
+### 1️⃣ Wdrażanie bezpośrednio przez Angular CLI
+```bash
 ng build --base-href https://bartosz-malec.pl/
 npx angular-cli-ghpages --dir=dist/browser
 
 ng build --base-href https://Vertonowsky.github.io/portfolio/
-npx angular-cli-ghpages --dir=dist/browser  
+npx angular-cli-ghpages --dir=dist/browser
+```
+
+### 2️⃣ Wdrażanie gotowym skryptem
+```bash
+npm run deploy
+```
+
+na koniec należy uzupełnić domenę wewnątrz zdalnego repozytorium i zsycnhronizować zmiany:

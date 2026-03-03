@@ -67,7 +67,9 @@
   z-index: 3;
 }
 
-#box_1.is-hidden {
+#box_1.is-hidden,
+#box_2.is-hidden,
+#frame.is-hidden {
   visibility: hidden;
   opacity: 0;
 }
@@ -91,6 +93,10 @@
   border-top-left-radius: 20px;
   background: rgba(11 16 25 / 0.6);
   z-index: 2;
+}
+
+#box_2.slideAnimation {
+  animation: 1s slideFromLeftSlightly ease-in-out;
 }
 
 #box_3 {

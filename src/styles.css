@@ -158,7 +158,7 @@ body::-webkit-scrollbar-corner {
 @media (max-width: 768px) {
 
   .heading {
-    font-size: 18px;
+    font-size: 19px;
   }
 
 }
@@ -166,7 +166,7 @@ body::-webkit-scrollbar-corner {
 @media (max-width: 580px) {
 
   .technology_item {
-    padding: 4px 6px;
+    padding: 6px 8px;
   }
 
 }
@@ -175,13 +175,13 @@ body::-webkit-scrollbar-corner {
 
   .heading {
     width: 90%;
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .heading i {
     margin-right: 8px;
-    padding: 7px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 17px;
   }
 
 }
