@@ -1,6 +1,8 @@
-## 📖 O Projekcie
+## 📖 About the Project
 
-Nowoczesne, responsywne portfolio prezentujące moje umiejętności, projekty i doświadczenie. Zaprojektowane z myślą o komfortowym i wygodnym zapoznaniem się ze mną.
+A modern, responsive portfolio showcasing my skills, projects, and experience. Designed to provide a comfortable and smooth way to get to know me.
+
+**🔗 Live Preview:** [https://bartosz-malec.pl](https://bartosz-malec.pl)
 
 ---
 
@@ -8,36 +10,37 @@ Nowoczesne, responsywne portfolio prezentujące moje umiejętności, projekty i 
 <p align="center">
   <img width="1920" height="851" alt="banner" src="https://github.com/user-attachments/assets/7ef1aff5-84e1-4ae5-af9c-c7931aca2c3c" />
 
-  <img width="1440" height="770" alt="plik" src="https://github.com/user-attachments/assets/450ed3b1-4683-4de8-87dd-424ca94d8d64" />
+  <img width="1440" height="770" alt="file" src="https://github.com/user-attachments/assets/450ed3b1-4683-4de8-87dd-424ca94d8d64" />
 
   <img width="1920" height="966" alt="projects" src="https://github.com/user-attachments/assets/8e5aaf8e-c29e-4265-b3b5-4a9f26ecda8e" />
-
 </p>
 
 ---
 
-## 🛠️ Stack Techniczny i Architektura
+## 🛠️ Technical Stack & Architecture
 
-Responsywna aplikacja typu SPA stworzona w Angularze z zastosowaniem najnowszych standardów i dobrych praktyk webowych.
+A responsive single-page application (SPA) built with Angular, following modern web standards and best practices.
 
-* ⚛️ **Angular:** Główny framework aplikacji webowej
-* 📝 **TypeScript:** Język używany w całym projekcie
-* 🚀 **angular-cli-ghpages:** Plugin do deployowania aplikacji na GitHub Pages
+* ⚛️ **Angular:** Main web application framework
+* 📝 **TypeScript:** Language used throughout the project
+* 🚀 **angular-cli-ghpages:** Plugin for deploying the application to GitHub Pages
 
-## 📂 Struktura Projektu
+---
+
+## 📂 Project Structure
 ```text
 src/
-├── app/            # Modularne komponenty UI
+├── app/            # Modular UI components
 ├── assets/
-      ├── images/   # Obrazy, ikony
-      ├── i18n/     # Pliki tłumaczeń
+      ├── images/   # Images, icons
+      ├── i18n/     # Translation files
 ```
 
 ## 📦 Deployment
 
-Aplikacja może być wdrożona zarówno na własnej domenie, jak i na GitHub Pages. Poniżej znajduje się instrukcja wdrożenia na Github Pages:
+The application can be deployed either on a custom domain or on GitHub Pages. Below is the deployment instruction for GitHub Pages:
 
-### 1️⃣ Wdrażanie bezpośrednio przez Angular CLI
+### 1️⃣ Deploy directly using Angular CLI
 ```bash
 ng build --base-href https://bartosz-malec.pl/
 npx angular-cli-ghpages --dir=dist/browser
@@ -46,9 +49,9 @@ ng build --base-href https://Vertonowsky.github.io/portfolio/
 npx angular-cli-ghpages --dir=dist/browser
 ```
 
-### 2️⃣ Wdrażanie gotowym skryptem
+### 2️⃣ Deploy using the provided npm script
 ```bash
 npm run deploy
 ```
 
-na koniec należy uzupełnić domenę wewnątrz zdalnego repozytorium i zsycnhronizować zmiany:
+Finally, update the domain in the remote repository and synchronize the changes. This process may take a few minutes.
