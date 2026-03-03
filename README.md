@@ -6,7 +6,12 @@ Nowoczesne, responsywne portfolio prezentujące moje umiejętności, projekty i 
 
 ## 📸 Preview
 <p align="center">
-  <img src="https://via.placeholder.com/800x450.png?text=Wstaw+Tu+Screenshot+Swojego+Portfolio" width="800" alt="Portfolio Preview" />
+  <img width="1920" height="851" alt="banner" src="https://github.com/user-attachments/assets/7ef1aff5-84e1-4ae5-af9c-c7931aca2c3c" />
+
+  <img width="1440" height="770" alt="plik" src="https://github.com/user-attachments/assets/450ed3b1-4683-4de8-87dd-424ca94d8d64" />
+
+  <img width="1920" height="966" alt="projects" src="https://github.com/user-attachments/assets/8e5aaf8e-c29e-4265-b3b5-4a9f26ecda8e" />
+
 </p>
 
 ---
