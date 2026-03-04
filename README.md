@@ -31,9 +31,9 @@ A responsive single-page application (SPA) built with Angular, following modern 
 ```text
 src/
 ├── app/            # Modular UI components
-├── assets/
-      ├── images/   # Images, icons
-      ├── i18n/     # Translation files
+└── assets/
+    ├── images/     # Images and icons
+    └── i18n/       # Translation files
 ```
 
 ## 📦 Deployment
