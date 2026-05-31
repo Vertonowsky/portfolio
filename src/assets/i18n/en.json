@@ -219,7 +219,7 @@
   },
   "timeline": {
     "title": "Work experience",
-    "currentJobTitle": "current",
+    "currentJobTitle": "Current",
     "jobs": [
       {
         "title": "Junior Java Software Engineer",
@@ -228,10 +228,10 @@
         "icon": "java.png",
         "steps": [
           "Development of the Player.pl platform based on a microservices architecture and the Spring framework",
-          "Analysis and resolution of production errors",
-          "Performing overnight application deployments",
+          "Handling production errors",
           "Design, analysis, and estimation of client requirements",
-          "Integration with external systems and services"
+          "Performing overnight application deployments",
+          "Participation in on-call duties"
         ],
         "technologies": [
           "Java",
@@ -249,9 +249,14 @@
         ],
         "promotions": [
           {
-            "current": true,
-            "date": "10.2025 - now",
-            "title": "Java Software Engineer"
+            "date": "06.2026 - now",
+            "title": "Team Leader",
+            "current": true
+          },
+          {
+            "date": "10.2025 - 05.2026",
+            "title": "Java Software Engineer",
+            "current": false
           }
         ]
       },
@@ -278,8 +283,8 @@
         "icon": "python.png",
         "steps": [
           "Development of a web application using Flask",
-          "Performing unit tests and logging tasks in the system",
-          "Designing new layouts using Figma"
+          "Writing unit tests and logging tasks",
+          "Designing mockups using Figma"
         ],
         "technologies": [
           "MySQL",
