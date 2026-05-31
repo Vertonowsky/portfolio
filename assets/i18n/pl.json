@@ -228,10 +228,10 @@
         "icon": "java.png",
         "steps": [
           "Rozwój platformy Player.pl w oparciu o architekturę mikroserwisową i framework Spring",
-          "Analiza oraz rozwiązywanie błędów produkcyjnych",
-          "Przeprowadzanie nocnych wdrożeń aplikacji",
+          "Obsługa błędów produkcyjnych",
           "Projektowanie, analiza i wycena wymagań klienta",
-          "Integracja z zewnętrznymi systemami i usługami"
+          "Przeprowadzanie nocnych wdrożeń aplikacji",
+          "Uczestnictwo w dyżurach"
         ],
         "technologies": [
           "Java",
@@ -249,9 +249,14 @@
         ],
         "promotions": [
           {
-            "date": "10.2025 - teraz",
-            "title": "Java Software Engineer",
+            "date": "06.2026 - teraz",
+            "title": "Kierownik zespołu",
             "current": true
+          },
+          {
+            "date": "10.2025 - 05.2026",
+            "title": "Java Software Engineer",
+            "current": false
           }
         ]
       },
@@ -278,8 +283,8 @@
         "icon": "python.png",
         "steps": [
           "Rozwój aplikacji internetowej przy użyciu Flask",
-          "Przeprowadzanie testów jednostkowych i rejestracja zadań w systemie",
-          "Projektowanie nowych widoków przy użyciu aplikacji Figma"
+          "Pisanie testów jednostkowych i rejestracja zadań",
+          "Projektowanie makiet za pomocą narzędzia Figma"
         ],
         "technologies": [
           "MySQL",
