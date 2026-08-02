@@ -3,6 +3,9 @@ img {
   right: 20px;
   top: 20px;
   max-width: 60px;
+  max-height: 60px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
   pointer-events: none;
 }
 
@@ -49,6 +52,7 @@ p {
 
   img {
     max-width: 40px;
+    max-height: 40px;
   }
 
 }
@@ -57,16 +61,13 @@ p {
 
   img {
     max-width: 50px;
+    max-height: 50px;
   }
 
 }
 
 
 @media (max-width: 650px) {
-
-  img {
-    max-width: 50px;
-  }
 
   .info h3 {
     font-size: var(--font-size-normal);
@@ -96,6 +97,7 @@ p {
     right: 10px;
     top: 10px;
     max-width: 40px;
+    max-height: 40px;
   }
 
 }

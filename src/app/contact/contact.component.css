@@ -151,8 +151,8 @@
 
 #frame .button_contact {
   position: relative;
-  width: 80%;
-  max-width: 220px;
+  width: 86%;
+  max-width: 240px;
   margin: auto;
   padding: 15px 15px;
   border-radius: 15px;
@@ -353,7 +353,7 @@
   #frame .button_contact {
     font-size: var(--font-size-smaller);
     padding: 12px;
-    width: 90%;
+    width: 96%;
   }
 
 }
