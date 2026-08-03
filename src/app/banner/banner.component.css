@@ -118,7 +118,7 @@
   position: relative;
   height: 700px;
   text-align: center;
-  animation: 2s slideIn;
+  animation: 1.1s riseIn cubic-bezier(0.22, 1, 0.36, 1);
   z-index: 2;
 }
 
@@ -128,6 +128,17 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+@keyframes riseIn {
+  from { transform: translateY(45px); }
+  to { transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #banner_image {
+    animation: none;
+  }
 }
 
 
