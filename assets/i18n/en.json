@@ -6,21 +6,21 @@
         "title": "Innovations in Enterpreneurship",
         "description": "International School for Social and Business Studies",
         "country": "Slovenia",
-        "icon": "celje.png",
+        "icon": "celje.webp",
         "date": "2024"
       },
       {
         "title": "Digital transformation of companies",
         "description": "Universidad de Almeria",
         "country": "Spain",
-        "icon": "ual.png",
+        "icon": "ual.webp",
         "date": "2024"
       },
       {
         "title": "Web Application Development",
         "description": "Euromind",
         "country": "Hiszpania",
-        "icon": "euromind.png",
+        "icon": "euromind.webp",
         "date": "2021"
       }
     ],
@@ -28,7 +28,7 @@
       {
         "title": "Applied Computer Science",
         "description": "Warsaw University of Technology",
-        "icon": "pw.png",
+        "icon": "pw.webp",
         "date": "2025 - 2026",
         "degree": "Master",
         "customBackground": true
@@ -36,7 +36,7 @@
       {
         "title": "Computer Science",
         "description": "Warsaw University of Life Sciences",
-        "icon": "sggw.png",
+        "icon": "sggw.webp",
         "date": "2021 - 2025",
         "degree": "Engineer",
         "customBackground": true
@@ -135,9 +135,9 @@
       }
     ],
     "projectImages": [
-      "project-1-720p.png",
-      "project-2-720p.png",
-      "project-3-720p.png"
+      "project-1-720p.webp",
+      "project-2-720p.webp",
+      "project-3-720p.webp"
     ]
   },
   "technologySection": {
@@ -145,75 +145,75 @@
     "technologies": [
       {
         "name": "Java 21",
-        "icon": "java.png"
+        "icon": "java.webp"
       },
       {
         "name": "Spring",
-        "icon": "spring.png"
+        "icon": "spring.webp"
       },
       {
         "name": "Hibernate",
-        "icon": "hibernate.png"
+        "icon": "hibernate.webp"
       },
       {
         "name": "JPA",
-        "icon": "spring-data.png"
+        "icon": "spring-data.webp"
       },
       {
         "name": "Thymeleaf",
-        "icon": "thymeleaf.png"
+        "icon": "thymeleaf.webp"
       },
       {
         "name": "PostgreSQL",
-        "icon": "postgresql.png"
+        "icon": "postgresql.webp"
       },
       {
         "name": "MySQL",
-        "icon": "mysql.png"
+        "icon": "mysql.webp"
       },
       {
         "name": "ActiveMQ",
-        "icon": "activemq.png"
+        "icon": "activemq.webp"
       },
       {
         "name": "HTML",
-        "icon": "html.png"
+        "icon": "html.webp"
       },
       {
         "name": "CSS",
-        "icon": "css.png"
+        "icon": "css.webp"
       },
       {
         "name": "JavaScript",
-        "icon": "javascript.png"
+        "icon": "javascript.webp"
       },
       {
         "name": "Git",
-        "icon": "git.png"
+        "icon": "git.webp"
       },
       {
         "name": "GitHub",
-        "icon": "github_white.png"
+        "icon": "github_white.webp"
       },
       {
         "name": "Jenkins",
-        "icon": "jenkins.png"
+        "icon": "jenkins.webp"
       },
       {
         "name": "IntelliJ",
-        "icon": "intellij-idea.png"
+        "icon": "intellij-idea.webp"
       },
       {
         "name": "Postman",
-        "icon": "postman.png"
+        "icon": "postman.webp"
       },
       {
         "name": "Jira",
-        "icon": "jira.png"
+        "icon": "jira.webp"
       },
       {
         "name": "Confluence",
-        "icon": "confluence.png"
+        "icon": "confluence.webp"
       }
     ]
   },
@@ -225,7 +225,7 @@
         "title": "Junior Java Software Engineer",
         "company": "Redge Technologies",
         "date": "07.2023 - 09.2025",
-        "icon": "java.png",
+        "icon": "java.webp",
         "steps": [
           "Development of the Player.pl platform based on a microservices architecture and the Spring framework",
           "Handling production errors",
@@ -264,7 +264,7 @@
         "title": "Junior Java Developer",
         "company": "GAZ-SYSTEM",
         "date": "2022 - 2023",
-        "icon": "java.png",
+        "icon": "java.webp",
         "steps": [
           "Development of a cloud application using the IBM FILENET API",
           "Designing and implementing UML diagrams"
@@ -280,7 +280,7 @@
         "title": "Junior Python Developer",
         "company": "Euromind",
         "date": "July 2021",
-        "icon": "python.png",
+        "icon": "python.webp",
         "steps": [
           "Development of a web application using Flask",
           "Writing unit tests and logging tasks",
@@ -301,7 +301,7 @@
         "title": "Certified Programming Coach",
         "company": "Mindcloud",
         "date": "2017 - 2020",
-        "icon": "java.png",
+        "icon": "java.webp",
         "steps": [
           "Leading group programming classes in LUA and JAVA",
           "Active participation in events combining education and entertainment",
