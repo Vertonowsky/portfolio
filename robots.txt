@@ -1,0 +1,7 @@
+# https://bartosz-malec.pl/
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://bartosz-malec.pl/sitemap.xml
