@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --base-href https://bartosz-malec.pl/ && npx angular-cli-ghpages --dir=dist/browser"
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "deploy": "npm run sitemap && ng build --base-href https://bartosz-malec.pl/ && npx angular-cli-ghpages --dir=dist/browser"
   },
   "private": true,
   "dependencies": {
