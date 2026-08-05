@@ -53,7 +53,9 @@
   "CONTACT_FRAME_TITLE": "Razem możemy więcej!",
   "CONTACT_FRAME_DESCRIPTION": "Łączę techniczne podejście z praktycznym myśleniem o rozwiązaniach. Jeśli szukasz kogoś do wspólnego działania to zapraszam do kontaktu.",
   "footer": {
-    "title": "Copyright {{year}} © Bartosz Malec"
+    "title": "Copyright {{year}} © Bartosz Malec",
+    "linkedinLabel": "Bartosz Malec na LinkedIn (otwiera się w nowej karcie)",
+    "githubLabel": "Bartosz Malec na GitHub (otwiera się w nowej karcie)"
   },
   "header": {
     "start": "Start",
