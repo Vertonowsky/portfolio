@@ -53,7 +53,9 @@
   "CONTACT_FRAME_TITLE": "We can achieve more together!",
   "CONTACT_FRAME_DESCRIPTION": "I combine a technical approach with practical problem solving. If you're looking for someone to collaborate with, feel free to get in touch.",
   "footer": {
-    "title": "Copyright {{year}} © Bartosz Malec"
+    "title": "Copyright {{year}} © Bartosz Malec",
+    "linkedinLabel": "Bartosz Malec on LinkedIn (opens in a new tab)",
+    "githubLabel": "Bartosz Malec on GitHub (opens in a new tab)"
   },
   "header": {
     "start": "Start",

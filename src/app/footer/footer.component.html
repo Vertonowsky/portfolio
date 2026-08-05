@@ -6,8 +6,10 @@
       <p class="info"> {{ 'footer.title' | translate: {year: currentYear} }}</p>
 
       <div class="linkers">
-        <a href="https://www.linkedin.com/in/b-malec/" target="_blank" class="social_link"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/Vertonowsky" target="_blank" class="social_link"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/b-malec/" target="_blank" class="social_link"
+           [attr.aria-label]="'footer.linkedinLabel' | translate"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/Vertonowsky" target="_blank" class="social_link"
+           [attr.aria-label]="'footer.githubLabel' | translate"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
       </div>
     </div>
 
