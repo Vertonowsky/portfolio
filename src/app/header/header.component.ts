@@ -1,4 +1,4 @@
-import {Component, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
+import {ChangeDetectorRef, Component, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
 import {Language} from "../language/language.enum";
 import {NgClass, NgForOf, NgIf} from "@angular/common";
 import {TranslateModule, TranslateService} from "@ngx-translate/core";
@@ -26,13 +26,14 @@ export class HeaderComponent implements OnInit {
   showOptions : boolean = false;
   model?: Header;
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, private changeDetector: ChangeDetectorRef) {}
 
   ngOnInit() {
     this.toggleHeaderClass();
 
     this.translate.stream('header').subscribe((data: Header) => {
       this.model = data;
+      this.changeDetector.markForCheck();
     });
   }
 

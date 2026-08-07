@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { CookieService } from 'ngx-cookie-service';
 import { Language } from './language.enum';
 
 @Injectable({
@@ -9,23 +8,36 @@ import { Language } from './language.enum';
 export class LanguageService {
   private readonly LANGUAGE_COOKIE = 'language';
 
-  constructor(private translate: TranslateService, private cookieService: CookieService) {
+  constructor(private translate: TranslateService) {
     translate.addLangs([Language.ENGLISH, Language.POLISH]);
-    translate.setDefaultLang(Language.ENGLISH);
 
     const browserLang = translate.getBrowserLang();
     const lang : Language = browserLang === 'pl' ? Language.POLISH : Language.ENGLISH;
-    const cookieLanguage = this.cookieService.get(this.LANGUAGE_COOKIE) as Language;
+    const cookieLanguage = this.readCookie(this.LANGUAGE_COOKIE) as Language;
+    const initialLanguage = cookieLanguage ? cookieLanguage : lang;
 
-    this.setLanguage(cookieLanguage ? cookieLanguage : lang);
+    translate.setDefaultLang(initialLanguage);
+    this.setLanguage(initialLanguage);
   }
 
   setLanguage(language: Language) {
-    this.cookieService.set(this.LANGUAGE_COOKIE, language, { expires: 365 });
+    this.writeCookie(this.LANGUAGE_COOKIE, language);
     this.translate.use(language);
   }
 
   getLanguage(): Language {
     return this.translate.currentLang as Language;
+  }
+
+  private readCookie(name: string): string {
+    return document.cookie
+      .split('; ')
+      .find(cookie => cookie.startsWith(`${name}=`))
+      ?.split('=')[1] ?? '';
+  }
+
+  private writeCookie(name: string, value: string) {
+    const oneYearInSeconds = 365 * 24 * 60 * 60;
+    document.cookie = `${name}=${value};path=/;max-age=${oneYearInSeconds};SameSite=Lax`;
   }
 }

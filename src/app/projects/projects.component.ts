@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnDestroy, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, HostListener, Input, OnInit} from '@angular/core';
 import {AppModule} from "../app.module";
 import {TranslateModule, TranslateService} from "@ngx-translate/core";
 import {ProjectSection} from "./projects.model";
@@ -20,7 +20,7 @@ import {ProjectImageComponent} from "./project-image/project-image.component";
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent implements OnInit, OnDestroy {
+export class ProjectsComponent implements OnInit {
 
   private readonly MIN_SWIPE_DISTANCE = 50;
   private xStart: number | null = null;
@@ -29,20 +29,13 @@ export class ProjectsComponent implements OnInit, OnDestroy {
 
   model?: ProjectSection;
 
-  constructor(private translate: TranslateService, private elementRef: ElementRef) {}
+  constructor(private translate: TranslateService, private changeDetector: ChangeDetectorRef) {}
 
   ngOnInit() {
-    this.elementRef.nativeElement.addEventListener('touchstart', this.onTouchStart.bind(this), false);
-    this.elementRef.nativeElement.addEventListener('touchend', this.onTouchEnd.bind(this), false);
-
     this.translate.stream('projectSection').subscribe((data: ProjectSection) => {
       this.model = data;
+      this.changeDetector.markForCheck();
     });
-  }
-
-  ngOnDestroy(): void {
-    this.elementRef.nativeElement.removeEventListener('touchstart', this.onTouchStart.bind(this), false);
-    this.elementRef.nativeElement.removeEventListener('touchend', this.onTouchEnd.bind(this), false);
   }
 
 
@@ -91,11 +84,13 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     return classes;
   }
 
-  private onTouchStart(evt: TouchEvent): void {
+  @HostListener('touchstart', ['$event'])
+  onTouchStart(evt: TouchEvent): void {
     this.xStart = evt.touches[0].clientX;
   }
 
-  private onTouchEnd(evt: TouchEvent): void {
+  @HostListener('touchend', ['$event'])
+  onTouchEnd(evt: TouchEvent): void {
     if (this.xStart === null) return;
 
     const xEnd = evt.changedTouches[0].clientX;

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import {TranslateModule, TranslateService} from "@ngx-translate/core";
 import {Banner} from "./banner.model";
 
@@ -15,11 +15,12 @@ export class BannerComponent {
 
   model?: Banner;
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, private changeDetector: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.translate.stream('banner').subscribe((data: Banner) => {
       this.model = data;
+      this.changeDetector.markForCheck();
     });
   }
 

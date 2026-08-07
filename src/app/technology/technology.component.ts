@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {ChangeDetectorRef, Component} from '@angular/core';
 import {TechnologySection} from "./technology.model";
 import {TranslateService} from "@ngx-translate/core";
 import {AppModule} from "../app.module";
@@ -23,7 +23,7 @@ export class TechnologyComponent {
 
   model?: TechnologySection;
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, private changeDetector: ChangeDetectorRef) {}
 
   activeSwipeIndexes: number[] = [];
   animationDuration = 3000; // animation duration in ms
@@ -34,6 +34,7 @@ export class TechnologyComponent {
     this.translate.stream('technologySection').subscribe((data: TechnologySection) => {
       this.model = data;
       this.restartAnimation();
+      this.changeDetector.markForCheck();
     });
   }
 
@@ -67,6 +68,7 @@ export class TechnologyComponent {
     this.swipeTimeout = window.setTimeout(() => {
       this.activeSwipeIndexes = [];
       this.triggerNextSwipe();
+      this.changeDetector.markForCheck();
     }, this.animationDuration);
   }
 

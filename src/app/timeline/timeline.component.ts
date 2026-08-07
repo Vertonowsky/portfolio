@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import {AppModule} from "../app.module";
 import {NgForOf, NgIf} from "@angular/common";
 import {TranslateModule, TranslateService} from "@ngx-translate/core";
@@ -20,11 +20,12 @@ export class TimelineComponent {
 
   model?: Timeline;
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, private changeDetector: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.translate.stream('timeline').subscribe((data: Timeline) => {
       this.model = data;
+      this.changeDetector.markForCheck();
     });
   }
 
