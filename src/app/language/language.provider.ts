@@ -1,17 +1,19 @@
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { importProvidersFrom } from '@angular/core';
-import { Observable, from } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Language } from './language.enum';
 
-const TRANSLATIONS: Record<string, () => Promise<{ default: unknown }>> = {
-  [Language.ENGLISH]: () => import('../../assets/i18n/en.json'),
-  [Language.POLISH]: () => import('../../assets/i18n/pl.json')
+import en from '../../assets/i18n/en.json';
+import pl from '../../assets/i18n/pl.json';
+
+const TRANSLATIONS: Record<string, unknown> = {
+  [Language.ENGLISH]: en,
+  [Language.POLISH]: pl
 };
 
 export class InlineTranslateLoader implements TranslateLoader {
   getTranslation(lang: string): Observable<unknown> {
-    const load = TRANSLATIONS[lang] ?? TRANSLATIONS[Language.ENGLISH];
-    return from(load().then(module => module.default));
+    return of(TRANSLATIONS[lang] ?? TRANSLATIONS[Language.ENGLISH]);
   }
 }
 
