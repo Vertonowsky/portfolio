@@ -1,11 +1,20 @@
 <div class="project_img">
-  <img
-    src="{{ 'assets/images/project-' + (index + 1) + '-480p.webp' }}"
-    srcset="{{ 'assets/images/project-' + (index + 1) + '-360p.webp 640w, ' +
-               'assets/images/project-' + (index + 1) + '-480p.webp 854w, ' +
-               'assets/images/project-' + (index + 1) + '-720p.webp 1280w' }}"
-    sizes="(max-width: 480px) 360px, (max-width: 950px) 500px, (max-width: 1500px) 640px, 810px"
-    width="1280"
-    height="720"
-    alt="Project image">
+  <picture>
+    <!-- Poniżej 480 px slot ma 360 px, więc przy DPR 3 przeglądarka szukałaby
+         1080 px i wybierała wariant 1280w (720p). Ograniczenie do 854w (480p)
+         daje gęstość 2,4x przy zauważalnie mniejszym pliku. -->
+    <source media="(max-width: 480px)"
+            srcset="{{ 'assets/images/project-' + (index + 1) + '-360p.webp 640w, ' +
+                       'assets/images/project-' + (index + 1) + '-480p.webp 854w' }}"
+            sizes="360px">
+    <img
+      src="{{ 'assets/images/project-' + (index + 1) + '-480p.webp' }}"
+      srcset="{{ 'assets/images/project-' + (index + 1) + '-360p.webp 640w, ' +
+                 'assets/images/project-' + (index + 1) + '-480p.webp 854w, ' +
+                 'assets/images/project-' + (index + 1) + '-720p.webp 1280w' }}"
+      sizes="(max-width: 950px) 500px, (max-width: 1500px) 640px, 810px"
+      width="1280"
+      height="720"
+      alt="Project image">
+  </picture>
 </div>

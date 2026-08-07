@@ -122,6 +122,14 @@
   z-index: 2;
 }
 
+/* Wrapper <picture> nie może tworzyć własnego pudełka: #banner_image bywa
+   flexem (max-width 480px), a img ma wymiary procentowe liczone względem
+   kontenera. display:contents usuwa wrapper z układu, więc img pozostaje
+   bezpośrednim dzieckiem tak jak przed wprowadzeniem <picture>. */
+#banner_image picture {
+  display: contents;
+}
+
 #banner_image img {
   position: relative;
   pointer-events: none;

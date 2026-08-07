@@ -83,13 +83,24 @@
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <link rel="preload" as="image"
+  <!-- Preload musi wybrać dokładnie ten sam wariant co <picture> w banner.component.html.
+       Rozbicie na dwa linki z atrybutem media odwzorowuje tamten <source>; gdyby warunki
+       się rozjechały, przeglądarka pobrałaby dwa różne pliki zamiast jednego. -->
+  <link rel="preload" as="image" media="(max-width: 768px)"
+        href="assets/images/profile-picture-720w.webp"
+        imagesrcset="assets/images/profile-picture-360w.webp 360w,
+                     assets/images/profile-picture-600w.webp 600w,
+                     assets/images/profile-picture-720w.webp 720w"
+        imagesizes="340px"
+        fetchpriority="high">
+
+  <link rel="preload" as="image" media="(min-width: 768.01px)"
         href="assets/images/profile-picture-600w.webp"
         imagesrcset="assets/images/profile-picture-360w.webp 360w,
                      assets/images/profile-picture-600w.webp 600w,
                      assets/images/profile-picture-720w.webp 720w,
                      assets/images/profile-picture-1032w.webp 1032w"
-        imagesizes="(max-width: 768px) 340px, (max-width: 1280px) 500px, 600px"
+        imagesizes="(max-width: 1280px) 500px, 600px"
         fetchpriority="high">
 
   <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>

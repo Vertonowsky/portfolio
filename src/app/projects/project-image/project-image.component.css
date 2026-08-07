@@ -5,6 +5,12 @@
   border-radius: 20px;
 }
 
+/* .project_img jest flexem, a img ma wymiary względem niego. Wrapper <picture>
+   musi zniknąć z układu, żeby nie stać się elementem flex zamiast img. */
+picture {
+  display: contents;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;

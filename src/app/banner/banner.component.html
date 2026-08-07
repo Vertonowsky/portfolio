@@ -17,16 +17,29 @@
     </div>
 
     <div id="banner_image">
-      <img alt="Profile picture"
-           fetchpriority="high"
-           width="600"
-           height="698"
-           src="assets/images/profile-picture-600w.webp"
-           srcset="assets/images/profile-picture-360w.webp 360w,
-                   assets/images/profile-picture-600w.webp 600w,
-                   assets/images/profile-picture-720w.webp 720w,
-                   assets/images/profile-picture-1032w.webp 1032w"
-           sizes="(max-width: 768px) 340px, (max-width: 1280px) 500px, 600px">
+      <picture>
+        <!-- Na wąskich ekranach wariant 1032w jest celowo pominięty. Slot ma tam
+             340 px, więc przy DPR 3 przeglądarka szukałaby 1020 px i wybierała
+             1032w (269,9 kB). Zatrzymanie się na 720w daje gęstość 2,1x przy
+             153,4 kB. Powyżej 2x przyrost ostrości jest niedostrzegalny.
+             UWAGA: warunek media musi pozostać zgodny z preloadem w index.html,
+             inaczej przeglądarka pobierze dwa różne warianty. -->
+        <source media="(max-width: 768px)"
+                srcset="assets/images/profile-picture-360w.webp 360w,
+                        assets/images/profile-picture-600w.webp 600w,
+                        assets/images/profile-picture-720w.webp 720w"
+                sizes="340px">
+        <img alt="Profile picture"
+             fetchpriority="high"
+             width="600"
+             height="698"
+             src="assets/images/profile-picture-600w.webp"
+             srcset="assets/images/profile-picture-360w.webp 360w,
+                     assets/images/profile-picture-600w.webp 600w,
+                     assets/images/profile-picture-720w.webp 720w,
+                     assets/images/profile-picture-1032w.webp 1032w"
+             sizes="(max-width: 1280px) 500px, 600px">
+      </picture>
     </div>
   </div>
 
